@@ -1,4 +1,7 @@
-﻿using InventoryManagement.Models;
+﻿using InventoryManagement.Dto.Request;
+using InventoryManagement.Dto.Response;
+using InventoryManagement.Mapper;
+using InventoryManagement.Models;
 using InventoryManagement.Repository;
 using Microsoft.AspNetCore.Mvc;
 
@@ -16,38 +19,49 @@ namespace InventoryManagement.Controllers
         }
 
         [HttpGet]
-        public async Task<ActionResult<IEnumerable<OrderItem>>> GetOrderItems()
+        public async Task<ActionResult<IEnumerable<OrderItemResponse>>> GetOrderItems()
         {
+            var orderItemResponse = new List<OrderItemResponse>();
+
             var orderItems = await _repository.GetAllAsync();
-            return Ok(orderItems);
+
+            foreach (var item in orderItems)
+            {
+                orderItemResponse.Add(OrderItemMapper.OrderItemMapperView(item));
+            }
+
+            return orderItemResponse;
         }
 
         [HttpGet("{id}")]
-        public async Task<ActionResult<OrderItem>> GetOrderItem(int id)
+        public async Task<ActionResult<OrderItemResponse>> GetOrderItem(int id)
         {
+            var orderItemResponse = new OrderItemResponse();
+
             var orderItem = await _repository.GetByIdAsync(id);
             if (orderItem == null) return NotFound();
-            return Ok(orderItem);
-        }
 
-        [HttpPost]
-        public async Task<ActionResult<OrderItem>> CreateOrderItem(OrderItem orderItem)
-        {
-            var createdOrderItem = await _repository.AddAsync(orderItem);
-            return CreatedAtAction(nameof(GetOrderItem), new { id = createdOrderItem.Id }, createdOrderItem);
+            orderItemResponse = OrderItemMapper.OrderItemMapperView(orderItem);
+
+            return orderItemResponse;
         }
 
         [HttpPut("{id}")]
-        public async Task<IActionResult> UpdateOrderItem(int id, OrderItem orderItem)
+        public async Task<IActionResult> UpdateOrderItem(int id, OrderItemRequest orderItemRequest)
         {
-            if (id != orderItem.Id) return BadRequest();
-            await _repository.UpdateAsync(orderItem);
+            var orderItem = await _repository.GetByIdAsync(id);
+            if (orderItem == null) return NotFound();
+
+            await _repository.UpdateAsync(OrderItemMapper.OrderItemMapperDto(orderItemRequest));
             return NoContent();
         }
 
         [HttpDelete("{id}")]
-        public async Task<IActionResult> DeleteOrderItem(int id)
+        public async Task<IActionResult> DeleteProduct(int id)
         {
+            var orderItem = await _repository.GetByIdAsync(id);
+            if (orderItem == null) return NotFound();
+
             await _repository.DeleteAsync(id);
             return NoContent();
         }

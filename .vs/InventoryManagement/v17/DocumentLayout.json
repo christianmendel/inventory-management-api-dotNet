@@ -7,24 +7,24 @@
       "RelativeMoniker": "D:0:0:{EC2D2CB0-9427-44B8-A243-88A8ECB44A0B}|InventoryManagement\\InventoryManagement.csproj|solutionrelative:inventorymanagement\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{EC2D2CB0-9427-44B8-A243-88A8ECB44A0B}|InventoryManagement\\InventoryManagement.csproj|c:\\users\\chris\\source\\repos\\inventorymanagement\\inventorymanagement\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{EC2D2CB0-9427-44B8-A243-88A8ECB44A0B}|InventoryManagement\\InventoryManagement.csproj|solutionrelative:inventorymanagement\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{EC2D2CB0-9427-44B8-A243-88A8ECB44A0B}|InventoryManagement\\InventoryManagement.csproj|c:\\users\\chris\\source\\repos\\inventorymanagement\\inventorymanagement\\dto\\response\\customerresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EC2D2CB0-9427-44B8-A243-88A8ECB44A0B}|InventoryManagement\\InventoryManagement.csproj|solutionrelative:inventorymanagement\\dto\\response\\customerresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{EC2D2CB0-9427-44B8-A243-88A8ECB44A0B}|InventoryManagement\\InventoryManagement.csproj|c:\\users\\chris\\source\\repos\\inventorymanagement\\inventorymanagement\\models\\order.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{EC2D2CB0-9427-44B8-A243-88A8ECB44A0B}|InventoryManagement\\InventoryManagement.csproj|solutionrelative:inventorymanagement\\models\\order.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{EC2D2CB0-9427-44B8-A243-88A8ECB44A0B}|InventoryManagement\\InventoryManagement.csproj|c:\\users\\chris\\source\\repos\\inventorymanagement\\inventorymanagement\\dto\\response\\orderitemresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EC2D2CB0-9427-44B8-A243-88A8ECB44A0B}|InventoryManagement\\InventoryManagement.csproj|solutionrelative:inventorymanagement\\dto\\response\\orderitemresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{EC2D2CB0-9427-44B8-A243-88A8ECB44A0B}|InventoryManagement\\InventoryManagement.csproj|c:\\users\\chris\\source\\repos\\inventorymanagement\\inventorymanagement\\models\\orderitem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{EC2D2CB0-9427-44B8-A243-88A8ECB44A0B}|InventoryManagement\\InventoryManagement.csproj|solutionrelative:inventorymanagement\\models\\orderitem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{EC2D2CB0-9427-44B8-A243-88A8ECB44A0B}|InventoryManagement\\InventoryManagement.csproj|c:\\users\\chris\\source\\repos\\inventorymanagement\\inventorymanagement\\dto\\response\\orderresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EC2D2CB0-9427-44B8-A243-88A8ECB44A0B}|InventoryManagement\\InventoryManagement.csproj|solutionrelative:inventorymanagement\\dto\\response\\orderresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{EC2D2CB0-9427-44B8-A243-88A8ECB44A0B}|InventoryManagement\\InventoryManagement.csproj|c:\\users\\chris\\source\\repos\\inventorymanagement\\inventorymanagement\\controllers\\orderitemcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{EC2D2CB0-9427-44B8-A243-88A8ECB44A0B}|InventoryManagement\\InventoryManagement.csproj|solutionrelative:inventorymanagement\\controllers\\orderitemcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{EC2D2CB0-9427-44B8-A243-88A8ECB44A0B}|InventoryManagement\\InventoryManagement.csproj|c:\\users\\chris\\source\\repos\\inventorymanagement\\inventorymanagement\\dto\\response\\productresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EC2D2CB0-9427-44B8-A243-88A8ECB44A0B}|InventoryManagement\\InventoryManagement.csproj|solutionrelative:inventorymanagement\\dto\\response\\productresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{EC2D2CB0-9427-44B8-A243-88A8ECB44A0B}|InventoryManagement\\InventoryManagement.csproj|c:\\users\\chris\\source\\repos\\inventorymanagement\\inventorymanagement\\controllers\\ordercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{EC2D2CB0-9427-44B8-A243-88A8ECB44A0B}|InventoryManagement\\InventoryManagement.csproj|solutionrelative:inventorymanagement\\controllers\\ordercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{EC2D2CB0-9427-44B8-A243-88A8ECB44A0B}|InventoryManagement\\InventoryManagement.csproj|c:\\users\\chris\\source\\repos\\inventorymanagement\\inventorymanagement\\dto\\response\\categoryreponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EC2D2CB0-9427-44B8-A243-88A8ECB44A0B}|InventoryManagement\\InventoryManagement.csproj|solutionrelative:inventorymanagement\\dto\\response\\categoryreponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{EC2D2CB0-9427-44B8-A243-88A8ECB44A0B}|InventoryManagement\\InventoryManagement.csproj|c:\\users\\chris\\source\\repos\\inventorymanagement\\inventorymanagement\\controllers\\productcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -35,44 +35,84 @@
       "RelativeMoniker": "D:0:0:{EC2D2CB0-9427-44B8-A243-88A8ECB44A0B}|InventoryManagement\\InventoryManagement.csproj|solutionrelative:inventorymanagement\\repository\\categoryrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{EC2D2CB0-9427-44B8-A243-88A8ECB44A0B}|InventoryManagement\\InventoryManagement.csproj|c:\\users\\chris\\source\\repos\\inventorymanagement\\inventorymanagement\\repository\\customerrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{EC2D2CB0-9427-44B8-A243-88A8ECB44A0B}|InventoryManagement\\InventoryManagement.csproj|solutionrelative:inventorymanagement\\repository\\customerrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{EC2D2CB0-9427-44B8-A243-88A8ECB44A0B}|InventoryManagement\\InventoryManagement.csproj|c:\\users\\chris\\source\\repos\\inventorymanagement\\inventorymanagement\\mapper\\productmapper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EC2D2CB0-9427-44B8-A243-88A8ECB44A0B}|InventoryManagement\\InventoryManagement.csproj|solutionrelative:inventorymanagement\\mapper\\productmapper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{EC2D2CB0-9427-44B8-A243-88A8ECB44A0B}|InventoryManagement\\InventoryManagement.csproj|c:\\users\\chris\\source\\repos\\inventorymanagement\\inventorymanagement\\repository\\inventorymovementrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{EC2D2CB0-9427-44B8-A243-88A8ECB44A0B}|InventoryManagement\\InventoryManagement.csproj|solutionrelative:inventorymanagement\\repository\\inventorymovementrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{EC2D2CB0-9427-44B8-A243-88A8ECB44A0B}|InventoryManagement\\InventoryManagement.csproj|c:\\users\\chris\\source\\repos\\inventorymanagement\\inventorymanagement\\mapper\\ordermapper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EC2D2CB0-9427-44B8-A243-88A8ECB44A0B}|InventoryManagement\\InventoryManagement.csproj|solutionrelative:inventorymanagement\\mapper\\ordermapper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{EC2D2CB0-9427-44B8-A243-88A8ECB44A0B}|InventoryManagement\\InventoryManagement.csproj|c:\\users\\chris\\source\\repos\\inventorymanagement\\inventorymanagement\\repository\\orderitemrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{EC2D2CB0-9427-44B8-A243-88A8ECB44A0B}|InventoryManagement\\InventoryManagement.csproj|solutionrelative:inventorymanagement\\repository\\orderitemrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{EC2D2CB0-9427-44B8-A243-88A8ECB44A0B}|InventoryManagement\\InventoryManagement.csproj|c:\\users\\chris\\source\\repos\\inventorymanagement\\inventorymanagement\\mapper\\orderitemmapper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EC2D2CB0-9427-44B8-A243-88A8ECB44A0B}|InventoryManagement\\InventoryManagement.csproj|solutionrelative:inventorymanagement\\mapper\\orderitemmapper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{EC2D2CB0-9427-44B8-A243-88A8ECB44A0B}|InventoryManagement\\InventoryManagement.csproj|c:\\users\\chris\\source\\repos\\inventorymanagement\\inventorymanagement\\repository\\orderrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{EC2D2CB0-9427-44B8-A243-88A8ECB44A0B}|InventoryManagement\\InventoryManagement.csproj|solutionrelative:inventorymanagement\\repository\\orderrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{EC2D2CB0-9427-44B8-A243-88A8ECB44A0B}|InventoryManagement\\InventoryManagement.csproj|c:\\users\\chris\\source\\repos\\inventorymanagement\\inventorymanagement\\mapper\\customermapper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EC2D2CB0-9427-44B8-A243-88A8ECB44A0B}|InventoryManagement\\InventoryManagement.csproj|solutionrelative:inventorymanagement\\mapper\\customermapper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{EC2D2CB0-9427-44B8-A243-88A8ECB44A0B}|InventoryManagement\\InventoryManagement.csproj|c:\\users\\chris\\source\\repos\\inventorymanagement\\inventorymanagement\\repository\\productrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{EC2D2CB0-9427-44B8-A243-88A8ECB44A0B}|InventoryManagement\\InventoryManagement.csproj|solutionrelative:inventorymanagement\\repository\\productrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{EC2D2CB0-9427-44B8-A243-88A8ECB44A0B}|InventoryManagement\\InventoryManagement.csproj|c:\\users\\chris\\source\\repos\\inventorymanagement\\inventorymanagement\\settings\\base\\repositorybase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{EC2D2CB0-9427-44B8-A243-88A8ECB44A0B}|InventoryManagement\\InventoryManagement.csproj|solutionrelative:inventorymanagement\\settings\\base\\repositorybase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{EC2D2CB0-9427-44B8-A243-88A8ECB44A0B}|InventoryManagement\\InventoryManagement.csproj|c:\\users\\chris\\source\\repos\\inventorymanagement\\inventorymanagement\\mapper\\categorymapper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EC2D2CB0-9427-44B8-A243-88A8ECB44A0B}|InventoryManagement\\InventoryManagement.csproj|solutionrelative:inventorymanagement\\mapper\\categorymapper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{EC2D2CB0-9427-44B8-A243-88A8ECB44A0B}|InventoryManagement\\InventoryManagement.csproj|c:\\users\\chris\\source\\repos\\inventorymanagement\\inventorymanagement\\models\\category.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{EC2D2CB0-9427-44B8-A243-88A8ECB44A0B}|InventoryManagement\\InventoryManagement.csproj|solutionrelative:inventorymanagement\\models\\category.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{EC2D2CB0-9427-44B8-A243-88A8ECB44A0B}|InventoryManagement\\InventoryManagement.csproj|c:\\users\\chris\\source\\repos\\inventorymanagement\\inventorymanagement\\controllers\\inventorymovementcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{EC2D2CB0-9427-44B8-A243-88A8ECB44A0B}|InventoryManagement\\InventoryManagement.csproj|solutionrelative:inventorymanagement\\controllers\\inventorymovementcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{EC2D2CB0-9427-44B8-A243-88A8ECB44A0B}|InventoryManagement\\InventoryManagement.csproj|c:\\users\\chris\\source\\repos\\inventorymanagement\\inventorymanagement\\repository\\productrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EC2D2CB0-9427-44B8-A243-88A8ECB44A0B}|InventoryManagement\\InventoryManagement.csproj|solutionrelative:inventorymanagement\\repository\\productrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EC2D2CB0-9427-44B8-A243-88A8ECB44A0B}|InventoryManagement\\InventoryManagement.csproj|c:\\users\\chris\\source\\repos\\inventorymanagement\\inventorymanagement\\repository\\orderrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EC2D2CB0-9427-44B8-A243-88A8ECB44A0B}|InventoryManagement\\InventoryManagement.csproj|solutionrelative:inventorymanagement\\repository\\orderrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EC2D2CB0-9427-44B8-A243-88A8ECB44A0B}|InventoryManagement\\InventoryManagement.csproj|c:\\users\\chris\\source\\repos\\inventorymanagement\\inventorymanagement\\repository\\orderitemrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EC2D2CB0-9427-44B8-A243-88A8ECB44A0B}|InventoryManagement\\InventoryManagement.csproj|solutionrelative:inventorymanagement\\repository\\orderitemrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EC2D2CB0-9427-44B8-A243-88A8ECB44A0B}|InventoryManagement\\InventoryManagement.csproj|c:\\users\\chris\\source\\repos\\inventorymanagement\\inventorymanagement\\repository\\inventorymovementrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EC2D2CB0-9427-44B8-A243-88A8ECB44A0B}|InventoryManagement\\InventoryManagement.csproj|solutionrelative:inventorymanagement\\repository\\inventorymovementrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EC2D2CB0-9427-44B8-A243-88A8ECB44A0B}|InventoryManagement\\InventoryManagement.csproj|c:\\users\\chris\\source\\repos\\inventorymanagement\\inventorymanagement\\models\\inventorymovement.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EC2D2CB0-9427-44B8-A243-88A8ECB44A0B}|InventoryManagement\\InventoryManagement.csproj|solutionrelative:inventorymanagement\\models\\inventorymovement.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EC2D2CB0-9427-44B8-A243-88A8ECB44A0B}|InventoryManagement\\InventoryManagement.csproj|c:\\users\\chris\\source\\repos\\inventorymanagement\\inventorymanagement\\repository\\customerrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EC2D2CB0-9427-44B8-A243-88A8ECB44A0B}|InventoryManagement\\InventoryManagement.csproj|solutionrelative:inventorymanagement\\repository\\customerrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EC2D2CB0-9427-44B8-A243-88A8ECB44A0B}|InventoryManagement\\InventoryManagement.csproj|c:\\users\\chris\\source\\repos\\inventorymanagement\\inventorymanagement\\models\\customer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EC2D2CB0-9427-44B8-A243-88A8ECB44A0B}|InventoryManagement\\InventoryManagement.csproj|solutionrelative:inventorymanagement\\models\\customer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{EC2D2CB0-9427-44B8-A243-88A8ECB44A0B}|InventoryManagement\\InventoryManagement.csproj|c:\\users\\chris\\source\\repos\\inventorymanagement\\inventorymanagement\\models\\product.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{EC2D2CB0-9427-44B8-A243-88A8ECB44A0B}|InventoryManagement\\InventoryManagement.csproj|solutionrelative:inventorymanagement\\models\\product.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{EC2D2CB0-9427-44B8-A243-88A8ECB44A0B}|InventoryManagement\\InventoryManagement.csproj|c:\\users\\chris\\source\\repos\\inventorymanagement\\inventorymanagement\\models\\inventorymovement.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{EC2D2CB0-9427-44B8-A243-88A8ECB44A0B}|InventoryManagement\\InventoryManagement.csproj|solutionrelative:inventorymanagement\\models\\inventorymovement.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{EC2D2CB0-9427-44B8-A243-88A8ECB44A0B}|InventoryManagement\\InventoryManagement.csproj|c:\\users\\chris\\source\\repos\\inventorymanagement\\inventorymanagement\\models\\orderitem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EC2D2CB0-9427-44B8-A243-88A8ECB44A0B}|InventoryManagement\\InventoryManagement.csproj|solutionrelative:inventorymanagement\\models\\orderitem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EC2D2CB0-9427-44B8-A243-88A8ECB44A0B}|InventoryManagement\\InventoryManagement.csproj|c:\\users\\chris\\source\\repos\\inventorymanagement\\inventorymanagement\\models\\order.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EC2D2CB0-9427-44B8-A243-88A8ECB44A0B}|InventoryManagement\\InventoryManagement.csproj|solutionrelative:inventorymanagement\\models\\order.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EC2D2CB0-9427-44B8-A243-88A8ECB44A0B}|InventoryManagement\\InventoryManagement.csproj|c:\\users\\chris\\source\\repos\\inventorymanagement\\inventorymanagement\\controllers\\ordercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EC2D2CB0-9427-44B8-A243-88A8ECB44A0B}|InventoryManagement\\InventoryManagement.csproj|solutionrelative:inventorymanagement\\controllers\\ordercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EC2D2CB0-9427-44B8-A243-88A8ECB44A0B}|InventoryManagement\\InventoryManagement.csproj|c:\\users\\chris\\source\\repos\\inventorymanagement\\inventorymanagement\\controllers\\orderitemcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EC2D2CB0-9427-44B8-A243-88A8ECB44A0B}|InventoryManagement\\InventoryManagement.csproj|solutionrelative:inventorymanagement\\controllers\\orderitemcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EC2D2CB0-9427-44B8-A243-88A8ECB44A0B}|InventoryManagement\\InventoryManagement.csproj|c:\\users\\chris\\source\\repos\\inventorymanagement\\inventorymanagement\\dto\\request\\orderitemrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EC2D2CB0-9427-44B8-A243-88A8ECB44A0B}|InventoryManagement\\InventoryManagement.csproj|solutionrelative:inventorymanagement\\dto\\request\\orderitemrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EC2D2CB0-9427-44B8-A243-88A8ECB44A0B}|InventoryManagement\\InventoryManagement.csproj|c:\\users\\chris\\source\\repos\\inventorymanagement\\inventorymanagement\\controllers\\inventorymovementcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EC2D2CB0-9427-44B8-A243-88A8ECB44A0B}|InventoryManagement\\InventoryManagement.csproj|solutionrelative:inventorymanagement\\controllers\\inventorymovementcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{EC2D2CB0-9427-44B8-A243-88A8ECB44A0B}|InventoryManagement\\InventoryManagement.csproj|c:\\users\\chris\\source\\repos\\inventorymanagement\\inventorymanagement\\controllers\\customercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -83,8 +123,28 @@
       "RelativeMoniker": "D:0:0:{EC2D2CB0-9427-44B8-A243-88A8ECB44A0B}|InventoryManagement\\InventoryManagement.csproj|solutionrelative:inventorymanagement\\controllers\\categorycontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{EC2D2CB0-9427-44B8-A243-88A8ECB44A0B}|InventoryManagement\\InventoryManagement.csproj|c:\\users\\chris\\source\\repos\\inventorymanagement\\inventorymanagement\\models\\customer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{EC2D2CB0-9427-44B8-A243-88A8ECB44A0B}|InventoryManagement\\InventoryManagement.csproj|solutionrelative:inventorymanagement\\models\\customer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{EC2D2CB0-9427-44B8-A243-88A8ECB44A0B}|InventoryManagement\\InventoryManagement.csproj|c:\\users\\chris\\source\\repos\\inventorymanagement\\inventorymanagement\\dto\\request\\productrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EC2D2CB0-9427-44B8-A243-88A8ECB44A0B}|InventoryManagement\\InventoryManagement.csproj|solutionrelative:inventorymanagement\\dto\\request\\productrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EC2D2CB0-9427-44B8-A243-88A8ECB44A0B}|InventoryManagement\\InventoryManagement.csproj|c:\\users\\chris\\source\\repos\\inventorymanagement\\inventorymanagement\\dto\\request\\customerrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EC2D2CB0-9427-44B8-A243-88A8ECB44A0B}|InventoryManagement\\InventoryManagement.csproj|solutionrelative:inventorymanagement\\dto\\request\\customerrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EC2D2CB0-9427-44B8-A243-88A8ECB44A0B}|InventoryManagement\\InventoryManagement.csproj|c:\\users\\chris\\source\\repos\\inventorymanagement\\inventorymanagement\\dto\\request\\categoryrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EC2D2CB0-9427-44B8-A243-88A8ECB44A0B}|InventoryManagement\\InventoryManagement.csproj|solutionrelative:inventorymanagement\\dto\\request\\categoryrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EC2D2CB0-9427-44B8-A243-88A8ECB44A0B}|InventoryManagement\\InventoryManagement.csproj|c:\\users\\chris\\source\\repos\\inventorymanagement\\inventorymanagement\\dto\\request\\orderrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EC2D2CB0-9427-44B8-A243-88A8ECB44A0B}|InventoryManagement\\InventoryManagement.csproj|solutionrelative:inventorymanagement\\dto\\request\\orderrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EC2D2CB0-9427-44B8-A243-88A8ECB44A0B}|InventoryManagement\\InventoryManagement.csproj|c:\\users\\chris\\source\\repos\\inventorymanagement\\inventorymanagement\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EC2D2CB0-9427-44B8-A243-88A8ECB44A0B}|InventoryManagement\\InventoryManagement.csproj|solutionrelative:inventorymanagement\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EC2D2CB0-9427-44B8-A243-88A8ECB44A0B}|InventoryManagement\\InventoryManagement.csproj|c:\\users\\chris\\source\\repos\\inventorymanagement\\inventorymanagement\\settings\\base\\repositorybase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EC2D2CB0-9427-44B8-A243-88A8ECB44A0B}|InventoryManagement\\InventoryManagement.csproj|solutionrelative:inventorymanagement\\settings\\base\\repositorybase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -94,103 +154,92 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 8,
+          "SelectedChildIndex": 7,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "CategoryRepository.cs",
-              "DocumentMoniker": "C:\\Users\\chris\\source\\repos\\InventoryManagement\\InventoryManagement\\Repository\\CategoryRepository.cs",
-              "RelativeDocumentMoniker": "InventoryManagement\\Repository\\CategoryRepository.cs",
-              "ToolTip": "C:\\Users\\chris\\source\\repos\\InventoryManagement\\InventoryManagement\\Repository\\CategoryRepository.cs",
-              "RelativeToolTip": "InventoryManagement\\Repository\\CategoryRepository.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAACkAAAAJAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-26T17:07:30.306Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "OrderItemRepository.cs",
-              "DocumentMoniker": "C:\\Users\\chris\\source\\repos\\InventoryManagement\\InventoryManagement\\Repository\\OrderItemRepository.cs",
-              "RelativeDocumentMoniker": "InventoryManagement\\Repository\\OrderItemRepository.cs",
-              "ToolTip": "C:\\Users\\chris\\source\\repos\\InventoryManagement\\InventoryManagement\\Repository\\OrderItemRepository.cs",
-              "RelativeToolTip": "InventoryManagement\\Repository\\OrderItemRepository.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAEAAAAiAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-26T17:12:20.877Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "ProductController.cs",
-              "DocumentMoniker": "C:\\Users\\chris\\source\\repos\\InventoryManagement\\InventoryManagement\\Controllers\\ProductController.cs",
-              "RelativeDocumentMoniker": "InventoryManagement\\Controllers\\ProductController.cs",
-              "ToolTip": "C:\\Users\\chris\\source\\repos\\InventoryManagement\\InventoryManagement\\Controllers\\ProductController.cs",
-              "RelativeToolTip": "InventoryManagement\\Controllers\\ProductController.cs",
-              "ViewState": "AQIAAA0AAAAAAAAAAAAgwDAAAAArAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-26T14:29:38.553Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "OrderItemController.cs",
-              "DocumentMoniker": "C:\\Users\\chris\\source\\repos\\InventoryManagement\\InventoryManagement\\Controllers\\OrderItemController.cs",
-              "RelativeDocumentMoniker": "InventoryManagement\\Controllers\\OrderItemController.cs",
-              "ToolTip": "C:\\Users\\chris\\source\\repos\\InventoryManagement\\InventoryManagement\\Controllers\\OrderItemController.cs",
-              "RelativeToolTip": "InventoryManagement\\Controllers\\OrderItemController.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAADIAAAAuAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-26T17:59:28.407Z"
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 5,
-              "Title": "OrderController.cs",
-              "DocumentMoniker": "C:\\Users\\chris\\source\\repos\\InventoryManagement\\InventoryManagement\\Controllers\\OrderController.cs",
-              "RelativeDocumentMoniker": "InventoryManagement\\Controllers\\OrderController.cs",
-              "ToolTip": "C:\\Users\\chris\\source\\repos\\InventoryManagement\\InventoryManagement\\Controllers\\OrderController.cs",
-              "RelativeToolTip": "InventoryManagement\\Controllers\\OrderController.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAADIAAAApAAAA",
+              "Title": "CategoryReponse.cs",
+              "DocumentMoniker": "C:\\Users\\chris\\source\\repos\\InventoryManagement\\InventoryManagement\\Dto\\Response\\CategoryReponse.cs",
+              "RelativeDocumentMoniker": "InventoryManagement\\Dto\\Response\\CategoryReponse.cs",
+              "ToolTip": "C:\\Users\\chris\\source\\repos\\InventoryManagement\\InventoryManagement\\Dto\\Response\\CategoryReponse.cs",
+              "RelativeToolTip": "InventoryManagement\\Dto\\Response\\CategoryReponse.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAIAAAAgAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-26T17:58:52.7Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "OrderItem.cs",
-              "DocumentMoniker": "C:\\Users\\chris\\source\\repos\\InventoryManagement\\InventoryManagement\\Models\\OrderItem.cs",
-              "RelativeDocumentMoniker": "InventoryManagement\\Models\\OrderItem.cs",
-              "ToolTip": "C:\\Users\\chris\\source\\repos\\InventoryManagement\\InventoryManagement\\Models\\OrderItem.cs",
-              "RelativeToolTip": "InventoryManagement\\Models\\OrderItem.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAcAAAAbAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-26T17:10:30.771Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "Order.cs",
-              "DocumentMoniker": "C:\\Users\\chris\\source\\repos\\InventoryManagement\\InventoryManagement\\Models\\Order.cs",
-              "RelativeDocumentMoniker": "InventoryManagement\\Models\\Order.cs",
-              "ToolTip": "C:\\Users\\chris\\source\\repos\\InventoryManagement\\InventoryManagement\\Models\\Order.cs",
-              "RelativeToolTip": "InventoryManagement\\Models\\Order.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-26T17:10:16.033Z"
+              "WhenOpened": "2024-07-29T13:53:28.34Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\chris\\source\\repos\\InventoryManagement\\InventoryManagement\\Program.cs",
-              "RelativeDocumentMoniker": "InventoryManagement\\Program.cs",
-              "ToolTip": "C:\\Users\\chris\\source\\repos\\InventoryManagement\\InventoryManagement\\Program.cs",
-              "RelativeToolTip": "InventoryManagement\\Program.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABcAAAAAAAAA",
+              "Title": "CustomerResponse.cs",
+              "DocumentMoniker": "C:\\Users\\chris\\source\\repos\\InventoryManagement\\InventoryManagement\\Dto\\Response\\CustomerResponse.cs",
+              "RelativeDocumentMoniker": "InventoryManagement\\Dto\\Response\\CustomerResponse.cs",
+              "ToolTip": "C:\\Users\\chris\\source\\repos\\InventoryManagement\\InventoryManagement\\Dto\\Response\\CustomerResponse.cs",
+              "RelativeToolTip": "InventoryManagement\\Dto\\Response\\CustomerResponse.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAIAAAAhAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-26T14:23:12.35Z"
+              "WhenOpened": "2024-07-29T13:44:16.49Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "OrderItemResponse.cs",
+              "DocumentMoniker": "C:\\Users\\chris\\source\\repos\\InventoryManagement\\InventoryManagement\\Dto\\Response\\OrderItemResponse.cs",
+              "RelativeDocumentMoniker": "InventoryManagement\\Dto\\Response\\OrderItemResponse.cs",
+              "ToolTip": "C:\\Users\\chris\\source\\repos\\InventoryManagement\\InventoryManagement\\Dto\\Response\\OrderItemResponse.cs",
+              "RelativeToolTip": "InventoryManagement\\Dto\\Response\\OrderItemResponse.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAIAAAAiAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-29T14:08:41.059Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "OrderResponse.cs",
+              "DocumentMoniker": "C:\\Users\\chris\\source\\repos\\InventoryManagement\\InventoryManagement\\Dto\\Response\\OrderResponse.cs",
+              "RelativeDocumentMoniker": "InventoryManagement\\Dto\\Response\\OrderResponse.cs",
+              "ToolTip": "C:\\Users\\chris\\source\\repos\\InventoryManagement\\InventoryManagement\\Dto\\Response\\OrderResponse.cs",
+              "RelativeToolTip": "InventoryManagement\\Dto\\Response\\OrderResponse.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAqwAQAAAAeAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-29T14:07:56.62Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "ProductResponse.cs",
+              "DocumentMoniker": "C:\\Users\\chris\\source\\repos\\InventoryManagement\\InventoryManagement\\Dto\\Response\\ProductResponse.cs",
+              "RelativeDocumentMoniker": "InventoryManagement\\Dto\\Response\\ProductResponse.cs",
+              "ToolTip": "C:\\Users\\chris\\source\\repos\\InventoryManagement\\InventoryManagement\\Dto\\Response\\ProductResponse.cs",
+              "RelativeToolTip": "InventoryManagement\\Dto\\Response\\ProductResponse.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAIAAAAgAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-29T13:22:11.72Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "ProductMapper.cs",
+              "DocumentMoniker": "C:\\Users\\chris\\source\\repos\\InventoryManagement\\InventoryManagement\\Mapper\\ProductMapper.cs",
+              "RelativeDocumentMoniker": "InventoryManagement\\Mapper\\ProductMapper.cs",
+              "ToolTip": "C:\\Users\\chris\\source\\repos\\InventoryManagement\\InventoryManagement\\Mapper\\ProductMapper.cs",
+              "RelativeToolTip": "InventoryManagement\\Mapper\\ProductMapper.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABsAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-29T12:35:30.52Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "OrderMapper.cs",
+              "DocumentMoniker": "C:\\Users\\chris\\source\\repos\\InventoryManagement\\InventoryManagement\\Mapper\\OrderMapper.cs",
+              "RelativeDocumentMoniker": "InventoryManagement\\Mapper\\OrderMapper.cs",
+              "ToolTip": "C:\\Users\\chris\\source\\repos\\InventoryManagement\\InventoryManagement\\Mapper\\OrderMapper.cs",
+              "RelativeToolTip": "InventoryManagement\\Mapper\\OrderMapper.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAqwBIAAAAQAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-29T13:09:25.51Z"
             },
             {
               "$type": "Document",
@@ -200,86 +249,242 @@
               "RelativeDocumentMoniker": "InventoryManagement\\appsettings.json",
               "ToolTip": "C:\\Users\\chris\\source\\repos\\InventoryManagement\\InventoryManagement\\appsettings.json",
               "RelativeToolTip": "InventoryManagement\\appsettings.json",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAAAAAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAIAAAAaAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
               "WhenOpened": "2024-07-26T14:08:57.533Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "InventoryMovementRepository.cs",
-              "DocumentMoniker": "C:\\Users\\chris\\source\\repos\\InventoryManagement\\InventoryManagement\\Repository\\InventoryMovementRepository.cs",
-              "RelativeDocumentMoniker": "InventoryManagement\\Repository\\InventoryMovementRepository.cs",
-              "ToolTip": "C:\\Users\\chris\\source\\repos\\InventoryManagement\\InventoryManagement\\Repository\\InventoryMovementRepository.cs",
-              "RelativeToolTip": "InventoryManagement\\Repository\\InventoryMovementRepository.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAEAAAAiAAAA",
+              "DocumentIndex": 7,
+              "Title": "CategoryRepository.cs",
+              "DocumentMoniker": "C:\\Users\\chris\\source\\repos\\InventoryManagement\\InventoryManagement\\Repository\\CategoryRepository.cs",
+              "RelativeDocumentMoniker": "InventoryManagement\\Repository\\CategoryRepository.cs",
+              "ToolTip": "C:\\Users\\chris\\source\\repos\\InventoryManagement\\InventoryManagement\\Repository\\CategoryRepository.cs",
+              "RelativeToolTip": "InventoryManagement\\Repository\\CategoryRepository.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAACgAAABDAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-26T17:11:46.684Z"
+              "WhenOpened": "2024-07-26T17:07:30.306Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "OrderItemMapper.cs",
+              "DocumentMoniker": "C:\\Users\\chris\\source\\repos\\InventoryManagement\\InventoryManagement\\Mapper\\OrderItemMapper.cs",
+              "RelativeDocumentMoniker": "InventoryManagement\\Mapper\\OrderItemMapper.cs",
+              "ToolTip": "C:\\Users\\chris\\source\\repos\\InventoryManagement\\InventoryManagement\\Mapper\\OrderItemMapper.cs",
+              "RelativeToolTip": "InventoryManagement\\Mapper\\OrderItemMapper.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAqwBEAAAAgAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-29T13:15:01.555Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 11,
-              "Title": "OrderRepository.cs",
-              "DocumentMoniker": "C:\\Users\\chris\\source\\repos\\InventoryManagement\\InventoryManagement\\Repository\\OrderRepository.cs",
-              "RelativeDocumentMoniker": "InventoryManagement\\Repository\\OrderRepository.cs",
-              "ToolTip": "C:\\Users\\chris\\source\\repos\\InventoryManagement\\InventoryManagement\\Repository\\OrderRepository.cs",
-              "RelativeToolTip": "InventoryManagement\\Repository\\OrderRepository.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAEAAAAiAAAA",
+              "Title": "CustomerMapper.cs",
+              "DocumentMoniker": "C:\\Users\\chris\\source\\repos\\InventoryManagement\\InventoryManagement\\Mapper\\CustomerMapper.cs",
+              "RelativeDocumentMoniker": "InventoryManagement\\Mapper\\CustomerMapper.cs",
+              "ToolTip": "C:\\Users\\chris\\source\\repos\\InventoryManagement\\InventoryManagement\\Mapper\\CustomerMapper.cs",
+              "RelativeToolTip": "InventoryManagement\\Mapper\\CustomerMapper.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABEAAAAhAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-26T17:08:41.887Z"
+              "WhenOpened": "2024-07-29T12:48:10.913Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 12,
-              "Title": "ProductRepository.cs",
-              "DocumentMoniker": "C:\\Users\\chris\\source\\repos\\InventoryManagement\\InventoryManagement\\Repository\\ProductRepository.cs",
-              "RelativeDocumentMoniker": "InventoryManagement\\Repository\\ProductRepository.cs",
-              "ToolTip": "C:\\Users\\chris\\source\\repos\\InventoryManagement\\InventoryManagement\\Repository\\ProductRepository.cs",
-              "RelativeToolTip": "InventoryManagement\\Repository\\ProductRepository.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAEAAAAiAAAA",
+              "Title": "CategoryMapper.cs",
+              "DocumentMoniker": "C:\\Users\\chris\\source\\repos\\InventoryManagement\\InventoryManagement\\Mapper\\CategoryMapper.cs",
+              "RelativeDocumentMoniker": "InventoryManagement\\Mapper\\CategoryMapper.cs",
+              "ToolTip": "C:\\Users\\chris\\source\\repos\\InventoryManagement\\InventoryManagement\\Mapper\\CategoryMapper.cs",
+              "RelativeToolTip": "InventoryManagement\\Mapper\\CategoryMapper.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAqwBEAAAAhAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-26T14:27:16.029Z"
+              "WhenOpened": "2024-07-29T13:38:48.164Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "ProductController.cs",
+              "DocumentMoniker": "C:\\Users\\chris\\source\\repos\\InventoryManagement\\InventoryManagement\\Controllers\\ProductController.cs",
+              "RelativeDocumentMoniker": "InventoryManagement\\Controllers\\ProductController.cs",
+              "ToolTip": "C:\\Users\\chris\\source\\repos\\InventoryManagement\\InventoryManagement\\Controllers\\ProductController.cs",
+              "RelativeToolTip": "InventoryManagement\\Controllers\\ProductController.cs",
+              "ViewState": "AQIAAAYAAAAAAAAAAAAAAA0AAAAIAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-26T14:29:38.553Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 13,
-              "Title": "RepositoryBase.cs",
-              "DocumentMoniker": "C:\\Users\\chris\\source\\repos\\InventoryManagement\\InventoryManagement\\Settings\\Base\\RepositoryBase.cs",
-              "RelativeDocumentMoniker": "InventoryManagement\\Settings\\Base\\RepositoryBase.cs",
-              "ToolTip": "C:\\Users\\chris\\source\\repos\\InventoryManagement\\InventoryManagement\\Settings\\Base\\RepositoryBase.cs",
-              "RelativeToolTip": "InventoryManagement\\Settings\\Base\\RepositoryBase.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAqwAMAAAAmAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-26T17:07:01.201Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "CustomerRepository.cs",
-              "DocumentMoniker": "C:\\Users\\chris\\source\\repos\\InventoryManagement\\InventoryManagement\\Repository\\CustomerRepository.cs",
-              "RelativeDocumentMoniker": "InventoryManagement\\Repository\\CustomerRepository.cs",
-              "ToolTip": "C:\\Users\\chris\\source\\repos\\InventoryManagement\\InventoryManagement\\Repository\\CustomerRepository.cs",
-              "RelativeToolTip": "InventoryManagement\\Repository\\CustomerRepository.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAEAAAAiAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-26T17:08:22.156Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 14,
               "Title": "Category.cs",
               "DocumentMoniker": "C:\\Users\\chris\\source\\repos\\InventoryManagement\\InventoryManagement\\Models\\Category.cs",
               "RelativeDocumentMoniker": "InventoryManagement\\Models\\Category.cs",
               "ToolTip": "C:\\Users\\chris\\source\\repos\\InventoryManagement\\InventoryManagement\\Models\\Category.cs",
               "RelativeToolTip": "InventoryManagement\\Models\\Category.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAqwAYAAAAhAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAqwA0AAAAIAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-07-26T17:09:33.799Z"
             },
             {
               "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "ProductRepository.cs",
+              "DocumentMoniker": "C:\\Users\\chris\\source\\repos\\InventoryManagement\\InventoryManagement\\Repository\\ProductRepository.cs",
+              "RelativeDocumentMoniker": "InventoryManagement\\Repository\\ProductRepository.cs",
+              "ToolTip": "C:\\Users\\chris\\source\\repos\\InventoryManagement\\InventoryManagement\\Repository\\ProductRepository.cs",
+              "RelativeToolTip": "InventoryManagement\\Repository\\ProductRepository.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABAAAAAcAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-26T14:27:16.029Z"
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 15,
+              "Title": "OrderRepository.cs",
+              "DocumentMoniker": "C:\\Users\\chris\\source\\repos\\InventoryManagement\\InventoryManagement\\Repository\\OrderRepository.cs",
+              "RelativeDocumentMoniker": "InventoryManagement\\Repository\\OrderRepository.cs",
+              "ToolTip": "C:\\Users\\chris\\source\\repos\\InventoryManagement\\InventoryManagement\\Repository\\OrderRepository.cs",
+              "RelativeToolTip": "InventoryManagement\\Repository\\OrderRepository.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAADgAAABQAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-26T17:08:41.887Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "InventoryMovement.cs",
+              "DocumentMoniker": "C:\\Users\\chris\\source\\repos\\InventoryManagement\\InventoryManagement\\Models\\InventoryMovement.cs",
+              "RelativeDocumentMoniker": "InventoryManagement\\Models\\InventoryMovement.cs",
+              "ToolTip": "C:\\Users\\chris\\source\\repos\\InventoryManagement\\InventoryManagement\\Models\\InventoryMovement.cs",
+              "RelativeToolTip": "InventoryManagement\\Models\\InventoryMovement.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAqwAIAAAARAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-26T17:10:44.013Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "InventoryMovementRepository.cs",
+              "DocumentMoniker": "C:\\Users\\chris\\source\\repos\\InventoryManagement\\InventoryManagement\\Repository\\InventoryMovementRepository.cs",
+              "RelativeDocumentMoniker": "InventoryManagement\\Repository\\InventoryMovementRepository.cs",
+              "ToolTip": "C:\\Users\\chris\\source\\repos\\InventoryManagement\\InventoryManagement\\Repository\\InventoryMovementRepository.cs",
+              "RelativeToolTip": "InventoryManagement\\Repository\\InventoryMovementRepository.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAABHAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-26T17:11:46.684Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "CustomerRepository.cs",
+              "DocumentMoniker": "C:\\Users\\chris\\source\\repos\\InventoryManagement\\InventoryManagement\\Repository\\CustomerRepository.cs",
+              "RelativeDocumentMoniker": "InventoryManagement\\Repository\\CustomerRepository.cs",
+              "ToolTip": "C:\\Users\\chris\\source\\repos\\InventoryManagement\\InventoryManagement\\Repository\\CustomerRepository.cs",
+              "RelativeToolTip": "InventoryManagement\\Repository\\CustomerRepository.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA8AAAAaAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-26T17:08:22.156Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "OrderItemRepository.cs",
+              "DocumentMoniker": "C:\\Users\\chris\\source\\repos\\InventoryManagement\\InventoryManagement\\Repository\\OrderItemRepository.cs",
+              "RelativeDocumentMoniker": "InventoryManagement\\Repository\\OrderItemRepository.cs",
+              "ToolTip": "C:\\Users\\chris\\source\\repos\\InventoryManagement\\InventoryManagement\\Repository\\OrderItemRepository.cs",
+              "RelativeToolTip": "InventoryManagement\\Repository\\OrderItemRepository.cs",
+              "ViewState": "AQIAAAMAAAAAAAAAAAAAAC0AAABRAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-26T17:12:20.877Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "Customer.cs",
+              "DocumentMoniker": "C:\\Users\\chris\\source\\repos\\InventoryManagement\\InventoryManagement\\Models\\Customer.cs",
+              "RelativeDocumentMoniker": "InventoryManagement\\Models\\Customer.cs",
+              "ToolTip": "C:\\Users\\chris\\source\\repos\\InventoryManagement\\InventoryManagement\\Models\\Customer.cs",
+              "RelativeToolTip": "InventoryManagement\\Models\\Customer.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAqwBQAAAAIAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-26T17:10:00.646Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "Product.cs",
+              "DocumentMoniker": "C:\\Users\\chris\\source\\repos\\InventoryManagement\\InventoryManagement\\Models\\Product.cs",
+              "RelativeDocumentMoniker": "InventoryManagement\\Models\\Product.cs",
+              "ToolTip": "C:\\Users\\chris\\source\\repos\\InventoryManagement\\InventoryManagement\\Models\\Product.cs",
+              "RelativeToolTip": "InventoryManagement\\Models\\Product.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAqwAQAAAAWAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-26T14:02:23.316Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "OrderItem.cs",
+              "DocumentMoniker": "C:\\Users\\chris\\source\\repos\\InventoryManagement\\InventoryManagement\\Models\\OrderItem.cs",
+              "RelativeDocumentMoniker": "InventoryManagement\\Models\\OrderItem.cs",
+              "ToolTip": "C:\\Users\\chris\\source\\repos\\InventoryManagement\\InventoryManagement\\Models\\OrderItem.cs",
+              "RelativeToolTip": "InventoryManagement\\Models\\OrderItem.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAqwAQAAAAYAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-26T17:10:30.771Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "Order.cs",
+              "DocumentMoniker": "C:\\Users\\chris\\source\\repos\\InventoryManagement\\InventoryManagement\\Models\\Order.cs",
+              "RelativeDocumentMoniker": "InventoryManagement\\Models\\Order.cs",
+              "ToolTip": "C:\\Users\\chris\\source\\repos\\InventoryManagement\\InventoryManagement\\Models\\Order.cs",
+              "RelativeToolTip": "InventoryManagement\\Models\\Order.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAqwAQAAAAUAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-26T17:10:16.033Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 26,
+              "Title": "OrderItemRequest.cs",
+              "DocumentMoniker": "C:\\Users\\chris\\source\\repos\\InventoryManagement\\InventoryManagement\\Dto\\Request\\OrderItemRequest.cs",
+              "RelativeDocumentMoniker": "InventoryManagement\\Dto\\Request\\OrderItemRequest.cs",
+              "ToolTip": "C:\\Users\\chris\\source\\repos\\InventoryManagement\\InventoryManagement\\Dto\\Request\\OrderItemRequest.cs",
+              "RelativeToolTip": "InventoryManagement\\Dto\\Request\\OrderItemRequest.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAQAAAAIAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-29T13:04:54.984Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 25,
+              "Title": "OrderItemController.cs",
+              "DocumentMoniker": "C:\\Users\\chris\\source\\repos\\InventoryManagement\\InventoryManagement\\Controllers\\OrderItemController.cs",
+              "RelativeDocumentMoniker": "InventoryManagement\\Controllers\\OrderItemController.cs",
+              "ToolTip": "C:\\Users\\chris\\source\\repos\\InventoryManagement\\InventoryManagement\\Controllers\\OrderItemController.cs",
+              "RelativeToolTip": "InventoryManagement\\Controllers\\OrderItemController.cs",
+              "ViewState": "AQIAAAkAAAAAAAAAAAAAAC0AAAAlAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-26T17:59:28.407Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 24,
+              "Title": "OrderController.cs",
+              "DocumentMoniker": "C:\\Users\\chris\\source\\repos\\InventoryManagement\\InventoryManagement\\Controllers\\OrderController.cs",
+              "RelativeDocumentMoniker": "InventoryManagement\\Controllers\\OrderController.cs",
+              "ToolTip": "C:\\Users\\chris\\source\\repos\\InventoryManagement\\InventoryManagement\\Controllers\\OrderController.cs",
+              "RelativeToolTip": "InventoryManagement\\Controllers\\OrderController.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAB0AAAA9AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-26T17:58:52.7Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 27,
               "Title": "InventoryMovementController.cs",
               "DocumentMoniker": "C:\\Users\\chris\\source\\repos\\InventoryManagement\\InventoryManagement\\Controllers\\InventoryMovementController.cs",
               "RelativeDocumentMoniker": "InventoryManagement\\Controllers\\InventoryMovementController.cs",
@@ -291,63 +496,99 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 16,
-              "Title": "Product.cs",
-              "DocumentMoniker": "C:\\Users\\chris\\source\\repos\\InventoryManagement\\InventoryManagement\\Models\\Product.cs",
-              "RelativeDocumentMoniker": "InventoryManagement\\Models\\Product.cs",
-              "ToolTip": "C:\\Users\\chris\\source\\repos\\InventoryManagement\\InventoryManagement\\Models\\Product.cs",
-              "RelativeToolTip": "InventoryManagement\\Models\\Product.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAqwAkAAAAqAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-26T14:02:23.316Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 17,
-              "Title": "InventoryMovement.cs",
-              "DocumentMoniker": "C:\\Users\\chris\\source\\repos\\InventoryManagement\\InventoryManagement\\Models\\InventoryMovement.cs",
-              "RelativeDocumentMoniker": "InventoryManagement\\Models\\InventoryMovement.cs",
-              "ToolTip": "C:\\Users\\chris\\source\\repos\\InventoryManagement\\InventoryManagement\\Models\\InventoryMovement.cs",
-              "RelativeToolTip": "InventoryManagement\\Models\\InventoryMovement.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAAFAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-26T17:10:44.013Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 18,
+              "DocumentIndex": 28,
               "Title": "CustomerController.cs",
               "DocumentMoniker": "C:\\Users\\chris\\source\\repos\\InventoryManagement\\InventoryManagement\\Controllers\\CustomerController.cs",
               "RelativeDocumentMoniker": "InventoryManagement\\Controllers\\CustomerController.cs",
               "ToolTip": "C:\\Users\\chris\\source\\repos\\InventoryManagement\\InventoryManagement\\Controllers\\CustomerController.cs",
               "RelativeToolTip": "InventoryManagement\\Controllers\\CustomerController.cs",
-              "ViewState": "AQIAAAsAAAAAAAAAAAAQwDIAAAApAAAA",
+              "ViewState": "AQIAACwAAAAAAAAAAAAwwCkAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-07-26T17:57:55.278Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 19,
+              "DocumentIndex": 29,
               "Title": "CategoryController.cs",
               "DocumentMoniker": "C:\\Users\\chris\\source\\repos\\InventoryManagement\\InventoryManagement\\Controllers\\CategoryController.cs",
               "RelativeDocumentMoniker": "InventoryManagement\\Controllers\\CategoryController.cs",
               "ToolTip": "C:\\Users\\chris\\source\\repos\\InventoryManagement\\InventoryManagement\\Controllers\\CategoryController.cs",
               "RelativeToolTip": "InventoryManagement\\Controllers\\CategoryController.cs",
-              "ViewState": "AQIAAAgAAAAAAAAAAAAxwDQAAAAJAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAEwAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-07-26T17:20:32.847Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 20,
-              "Title": "Customer.cs",
-              "DocumentMoniker": "C:\\Users\\chris\\source\\repos\\InventoryManagement\\InventoryManagement\\Models\\Customer.cs",
-              "RelativeDocumentMoniker": "InventoryManagement\\Models\\Customer.cs",
-              "ToolTip": "C:\\Users\\chris\\source\\repos\\InventoryManagement\\InventoryManagement\\Models\\Customer.cs",
-              "RelativeToolTip": "InventoryManagement\\Models\\Customer.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAAFAAAA",
+              "DocumentIndex": 30,
+              "Title": "ProductRequest.cs",
+              "DocumentMoniker": "C:\\Users\\chris\\source\\repos\\InventoryManagement\\InventoryManagement\\Dto\\Request\\ProductRequest.cs",
+              "RelativeDocumentMoniker": "InventoryManagement\\Dto\\Request\\ProductRequest.cs",
+              "ToolTip": "C:\\Users\\chris\\source\\repos\\InventoryManagement\\InventoryManagement\\Dto\\Request\\ProductRequest.cs",
+              "RelativeToolTip": "InventoryManagement\\Dto\\Request\\ProductRequest.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAqwAIAAAARAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-26T17:10:00.646Z"
+              "WhenOpened": "2024-07-29T12:34:31.473Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 31,
+              "Title": "CustomerRequest.cs",
+              "DocumentMoniker": "C:\\Users\\chris\\source\\repos\\InventoryManagement\\InventoryManagement\\Dto\\Request\\CustomerRequest.cs",
+              "RelativeDocumentMoniker": "InventoryManagement\\Dto\\Request\\CustomerRequest.cs",
+              "ToolTip": "C:\\Users\\chris\\source\\repos\\InventoryManagement\\InventoryManagement\\Dto\\Request\\CustomerRequest.cs",
+              "RelativeToolTip": "InventoryManagement\\Dto\\Request\\CustomerRequest.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAcAAAAvAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-29T12:45:33.608Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 32,
+              "Title": "CategoryRequest.cs",
+              "DocumentMoniker": "C:\\Users\\chris\\source\\repos\\InventoryManagement\\InventoryManagement\\Dto\\Request\\CategoryRequest.cs",
+              "RelativeDocumentMoniker": "InventoryManagement\\Dto\\Request\\CategoryRequest.cs",
+              "ToolTip": "C:\\Users\\chris\\source\\repos\\InventoryManagement\\InventoryManagement\\Dto\\Request\\CategoryRequest.cs",
+              "RelativeToolTip": "InventoryManagement\\Dto\\Request\\CategoryRequest.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAIAAAAgAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-29T13:37:37.034Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 33,
+              "Title": "OrderRequest.cs",
+              "DocumentMoniker": "C:\\Users\\chris\\source\\repos\\InventoryManagement\\InventoryManagement\\Dto\\Request\\OrderRequest.cs",
+              "RelativeDocumentMoniker": "InventoryManagement\\Dto\\Request\\OrderRequest.cs",
+              "ToolTip": "C:\\Users\\chris\\source\\repos\\InventoryManagement\\InventoryManagement\\Dto\\Request\\OrderRequest.cs",
+              "RelativeToolTip": "InventoryManagement\\Dto\\Request\\OrderRequest.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAqwAgAAAAkAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-29T13:03:47.935Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 34,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\chris\\source\\repos\\InventoryManagement\\InventoryManagement\\Program.cs",
+              "RelativeDocumentMoniker": "InventoryManagement\\Program.cs",
+              "ToolTip": "C:\\Users\\chris\\source\\repos\\InventoryManagement\\InventoryManagement\\Program.cs",
+              "RelativeToolTip": "InventoryManagement\\Program.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABcAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-26T14:23:12.35Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 35,
+              "Title": "RepositoryBase.cs",
+              "DocumentMoniker": "C:\\Users\\chris\\source\\repos\\InventoryManagement\\InventoryManagement\\Settings\\Base\\RepositoryBase.cs",
+              "RelativeDocumentMoniker": "InventoryManagement\\Settings\\Base\\RepositoryBase.cs",
+              "ToolTip": "C:\\Users\\chris\\source\\repos\\InventoryManagement\\InventoryManagement\\Settings\\Base\\RepositoryBase.cs",
+              "RelativeToolTip": "InventoryManagement\\Settings\\Base\\RepositoryBase.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAqwAMAAAAmAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-26T17:07:01.201Z"
             }
           ]
         }

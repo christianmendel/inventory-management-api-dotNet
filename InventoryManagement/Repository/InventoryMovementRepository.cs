@@ -11,7 +11,7 @@ namespace InventoryManagement.Repository
 
         public async Task<InventoryMovement> AddAsync(InventoryMovement movement)
         {
-            var query = "INSERT INTO inventory_movements (ProductId, QuantityChange, MovementDate, MovementType) VALUES (@ProductId, @QuantityChange, @MovementDate, @MovementType)";
+            var query = "INSERT INTO inventory_movements (ProductId, QuantityChange, MovementDate, MovementType) VALUES (@ProductId, @QuantityChange, @MovementDate, @MovementType) RETURNING id";
             var id = await _dbConnection.ExecuteScalarAsync<int>(query, movement);
             movement.Id = id;
             return movement;

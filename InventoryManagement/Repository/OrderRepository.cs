@@ -7,13 +7,24 @@ namespace InventoryManagement.Repository
 {
     public class OrderRepository : RepositoryBase
     {
-        public OrderRepository(IDbConnection dbConnection) : base(dbConnection) { }
+        private readonly OrderItemRepository _orderItemRepository;
+        public OrderRepository(IDbConnection dbConnection, OrderItemRepository orderItemRepository) : base(dbConnection) 
+        {
+            _orderItemRepository = orderItemRepository;
+        }
 
         public async Task<Order> AddAsync(Order order)
         {
-            var query = "INSERT INTO orders (CustomerId, OrderDate, Status) VALUES (@CustomerId, @OrderDate, @Status)";
+            var query = "INSERT INTO orders (CustomerId, OrderDate, Status) VALUES (@CustomerId, @OrderDate, @Status) RETURNING id";
             var id = await _dbConnection.ExecuteScalarAsync<int>(query, order);
-            order.Id = id;
+            order.AddId(id);
+
+            foreach (var item in order.OrderItems)
+            {
+                item.AddId(id);
+                await _orderItemRepository.AddAsync(item);
+            }
+
             return order;
         }
 
@@ -38,7 +49,16 @@ namespace InventoryManagement.Repository
         public async Task<IEnumerable<Order>> GetAllAsync()
         {
             var query = "SELECT * FROM orders";
-            return await _dbConnection.QueryAsync<Order>(query);
+
+            var orders = await _dbConnection.QueryAsync<Order>(query);
+
+            foreach (var item in orders)
+            {
+                var orderItems = await _orderItemRepository.GetAllByOrderIdAsync(item.Id);
+                item.AddListOrderItems(orderItems.AsList());
+            }
+
+            return orders;
         }
     }
 }

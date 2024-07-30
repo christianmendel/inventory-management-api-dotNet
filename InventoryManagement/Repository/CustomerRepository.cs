@@ -11,9 +11,9 @@ namespace InventoryManagement.Repository
 
         public async Task<Customer> AddAsync(Customer customer)
         {
-            var query = "INSERT INTO customers (Name, Email, Address, PhoneNumber) VALUES (@Name, @Email, @Address, @PhoneNumber)";
+            var query = "INSERT INTO customers (Name, Email, Address, PhoneNumber) VALUES (@Name, @Email, @Address, @PhoneNumber) RETURNING id";
             var id = await _dbConnection.ExecuteScalarAsync<int>(query, customer);
-            customer.Id = id;
+            customer.AddId(id);
             return customer;
         }
 

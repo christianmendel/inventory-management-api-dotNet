@@ -11,9 +11,9 @@ namespace InventoryManagement.Repository
 
         public async Task<OrderItem> AddAsync(OrderItem orderItem)
         {
-            var query = "INSERT INTO order_items (OrderId, ProductId, Quantity, UnitPrice) VALUES (@OrderId, @ProductId, @Quantity, @UnitPrice)";
+            var query = "INSERT INTO order_items (OrderId, ProductId, Quantity, UnitPrice) VALUES (@OrderId, @ProductId, @Quantity, @UnitPrice) RETURNING id";
             var id = await _dbConnection.ExecuteScalarAsync<int>(query, orderItem);
-            orderItem.Id = id;
+            orderItem.AddId(id);
             return orderItem;
         }
 
@@ -39,6 +39,11 @@ namespace InventoryManagement.Repository
         {
             var query = "SELECT * FROM order_items";
             return await _dbConnection.QueryAsync<OrderItem>(query);
+        }
+        public async Task<IEnumerable<OrderItem>> GetAllByOrderIdAsync(int orderId)
+        {
+            var query = "SELECT * FROM order_items WHERE OrderId = @OrderId";
+            return await _dbConnection.QueryAsync<OrderItem>(query, new { OrderId = orderId });
         }
     }
 }

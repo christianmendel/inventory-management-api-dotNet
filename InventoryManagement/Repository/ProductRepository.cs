@@ -12,9 +12,9 @@ namespace InventoryManagement.Repository
 
         public async Task<Product> AddAsync(Product product)
         {
-            var query = "INSERT INTO products (CategoryId, Name, Description, Quantity, Price, CreatedAt) VALUES (@CategoryId, @Name, @Description, @Quantity, @Price, @CreatedAt)";
+            var query = "INSERT INTO products (CategoryId, Name, Description, Quantity, Price, CreatedAt) VALUES (@CategoryId, @Name, @Description, @Quantity, @Price, @CreatedAt) RETURNING id";
             var id = await _dbConnection.ExecuteScalarAsync<int>(query, product);
-            product.Id = id;
+            product.AddId(id);
             return product;
         }
 

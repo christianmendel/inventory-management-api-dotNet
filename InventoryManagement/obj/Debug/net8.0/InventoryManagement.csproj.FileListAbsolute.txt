@@ -72,3 +72,4 @@ C:\Users\chris\source\repos\InventoryManagement\InventoryManagement\obj\Debug\ne
 C:\Users\chris\source\repos\InventoryManagement\InventoryManagement\obj\Debug\net8.0\InventoryManagement.genruntimeconfig.cache
 C:\Users\chris\source\repos\InventoryManagement\InventoryManagement\obj\Debug\net8.0\ref\InventoryManagement.dll
 C:\Users\chris\source\repos\InventoryManagement\InventoryManagement\bin\Debug\net8.0\Npgsql.dll
+C:\Users\chris\source\repos\InventoryManagement\InventoryManagement\obj\Debug\net8.0\InventoryManagement.sourcelink.json

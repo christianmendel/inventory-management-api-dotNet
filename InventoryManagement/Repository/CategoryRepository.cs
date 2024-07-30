@@ -11,9 +11,9 @@ namespace InventoryManagement.Repository
 
         public async Task<Category> AddAsync(Category category)
         {
-            var query = "INSERT INTO categories (Name, Description) VALUES (@Name, @Description)";
+            var query = "INSERT INTO categories (Name, Description) VALUES (@Name, @Description) RETURNING id";
             var id = await _dbConnection.ExecuteScalarAsync<int>(query, category);
-            category.Id = id;
+            category.AddId(id);
             return category;
         }
 
