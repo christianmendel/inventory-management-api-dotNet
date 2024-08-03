@@ -1,53 +1,44 @@
-﻿using InventoryManagement.Models;
+﻿using InventoryManagement.Dto.Response;
+using InventoryManagement.Models;
 using InventoryManagement.Repository;
+using InventoryManagement.Service;
+using InventoryManagement.Settings.HttpException;
 using Microsoft.AspNetCore.Mvc;
 
 namespace InventoryManagement.Controllers
 {
     public class InventoryMovementController : Controller
     {
-        private readonly InventoryMovementRepository _repository;
+        private readonly InventoryMovementService _service;
 
-        public InventoryMovementController(InventoryMovementRepository repository)
+        public InventoryMovementController(InventoryMovementService service)
         {
-            _repository = repository;
+            _service = service;
         }
 
         [HttpGet]
-        public async Task<ActionResult<IEnumerable<InventoryMovement>>> GetInventoryMovements()
+        public async Task<ActionResult<List<InventoryMovementResponse>>> GetInventoryMovements()
         {
-            var movements = await _repository.GetAllAsync();
-            return Ok(movements);
+            var response = await _service.GetInventoryMovements();
+
+            if (!response.All(item => item.IsValid()))
+            {
+                var customer = response.Where(item => !item.IsValid()).FirstOrDefault();
+                return BadRequest(new HttpException(StatusCodes.Status400BadRequest, customer.Notifications));
+            }
+
+            return response;
         }
 
         [HttpGet("{id}")]
-        public async Task<ActionResult<InventoryMovement>> GetInventoryMovement(int id)
+        public async Task<ActionResult<InventoryMovementResponse>> GetInventoryMovement(int id)
         {
-            var movement = await _repository.GetByIdAsync(id);
-            if (movement == null) return NotFound();
-            return Ok(movement);
-        }
+            var response = await _service.GetInventoryMovement(id);
 
-        [HttpPost]
-        public async Task<ActionResult<InventoryMovement>> CreateInventoryMovement(InventoryMovement movement)
-        {
-            var createdMovement = await _repository.AddAsync(movement);
-            return CreatedAtAction(nameof(GetInventoryMovement), new { id = createdMovement.Id }, createdMovement);
-        }
+            if (!response.IsValid())
+                return BadRequest(new HttpException(StatusCodes.Status400BadRequest, response.Notifications));
 
-        [HttpPut("{id}")]
-        public async Task<IActionResult> UpdateInventoryMovement(int id, InventoryMovement category)
-        {
-            if (id != category.Id) return BadRequest();
-            await _repository.UpdateAsync(category);
-            return NoContent();
-        }
-
-        [HttpDelete("{id}")]
-        public async Task<IActionResult> DeleteInventoryMovement(int id)
-        {
-            await _repository.DeleteAsync(id);
-            return NoContent();
+            return response;
         }
     }
 }

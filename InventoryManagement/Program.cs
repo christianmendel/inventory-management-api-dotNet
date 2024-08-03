@@ -1,4 +1,5 @@
 using InventoryManagement.Repository;
+using InventoryManagement.Service;
 using Npgsql;
 using System.Data;
 
@@ -12,6 +13,13 @@ builder.Services.AddTransient<InventoryMovementRepository>();
 builder.Services.AddTransient<OrderItemRepository>();
 builder.Services.AddTransient<OrderRepository>();
 builder.Services.AddTransient<ProductRepository>();
+
+builder.Services.AddTransient<CategoryService>();
+builder.Services.AddTransient<CustomerService>();
+builder.Services.AddTransient<InventoryMovementService>();
+builder.Services.AddTransient<OrderService>();
+builder.Services.AddTransient<OrderItemService>();
+builder.Services.AddTransient<ProductService>();
 
 // Adiciona os serviços ao contêiner de injeção de dependência
 builder.Services.AddControllers();

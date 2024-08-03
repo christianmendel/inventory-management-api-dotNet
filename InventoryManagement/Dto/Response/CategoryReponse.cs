@@ -1,6 +1,8 @@
-﻿namespace InventoryManagement.Dto.Response
+﻿using InventoryManagement.Settings.Validations;
+
+namespace InventoryManagement.Dto.Response
 {
-    public class CategoryReponse
+    public class CategoryReponse : Notifiable
     {
         public int Id { get; set; }
         public string Name { get; set; }

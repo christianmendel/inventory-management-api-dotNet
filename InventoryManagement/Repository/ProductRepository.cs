@@ -3,10 +3,11 @@ using InventoryManagement.Settings.Base;
 using InventoryManagement.Models;
 using System.Data;
 using System.Data.Common;
+using InventoryManagement.Contracts.Repository;
 
 namespace InventoryManagement.Repository
 {
-    public class ProductRepository : RepositoryBase
+    public class ProductRepository : RepositoryBase, IProductRepository
     {
         public ProductRepository(IDbConnection dbConnection) : base(dbConnection) { }
 

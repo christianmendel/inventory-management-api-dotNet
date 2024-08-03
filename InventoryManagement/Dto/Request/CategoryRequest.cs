@@ -1,4 +1,6 @@
-﻿namespace InventoryManagement.Dto.Request
+﻿using InventoryManagement.Settings.Validations;
+
+namespace InventoryManagement.Dto.Request
 {
     public class CategoryRequest
     {

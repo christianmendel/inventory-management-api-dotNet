@@ -1,8 +1,11 @@
-﻿using InventoryManagement.Dto.Request;
+﻿using Azure;
+using InventoryManagement.Dto.Request;
 using InventoryManagement.Dto.Response;
 using InventoryManagement.Mapper;
 using InventoryManagement.Models;
 using InventoryManagement.Repository;
+using InventoryManagement.Service;
+using InventoryManagement.Settings.HttpException;
 using Microsoft.AspNetCore.Mvc;
 
 namespace InventoryManagement.Controllers
@@ -11,71 +14,69 @@ namespace InventoryManagement.Controllers
     [ApiController]
     public class CategoryController : Controller
     {
-        private readonly CategoryRepository _repository;
+        private readonly CategoryService _service;
 
-        public CategoryController(CategoryRepository repository)
+        public CategoryController(CategoryService service)
         {
-            _repository = repository;
+            _service = service;
         }
 
         [HttpGet]
         public async Task<ActionResult<IEnumerable<CategoryReponse>>> GetCategories()
         {
-            var categoryResponse = new List<CategoryReponse>();
+            var response = await _service.GetCategories();
 
-            var categories = await _repository.GetAllAsync();
-
-            foreach (var item in categories)
+            if (!response.All(livro => livro.IsValid()))
             {
-                categoryResponse.Add(CategoryMapper.CategoryMapperView(item));
+                var category = response.Where(item => !item.IsValid()).FirstOrDefault();
+                return BadRequest(new HttpException(StatusCodes.Status400BadRequest, category.Notifications));
             }
 
-            return categoryResponse;
+            return response;
         }
 
         [HttpGet("{id}")]
         public async Task<ActionResult<CategoryReponse>> GetCategory(int id)
         {
-            var categoryResponse = new CategoryReponse();
+            var response = await _service.GetCategory(id);
 
-            var category = await _repository.GetByIdAsync(id);
-            if (category == null) return NotFound();
+            if (!response.IsValid())
+                return BadRequest(new HttpException(StatusCodes.Status400BadRequest, response.Notifications));
 
-            categoryResponse = CategoryMapper.CategoryMapperView(category);
-
-            return categoryResponse;
+            return response;
         }
 
         [HttpPost]
-        public async Task<ActionResult<Category>> CreateCategory(CategoryRequest categoryRequest)
+        public async Task<ActionResult<CategoryReponse>> CreateCategory(CategoryRequest categoryRequest)
         {
-            var category = CategoryMapper.CategoryMapperDto(categoryRequest);
+            var response = await _service.CreateCategory(categoryRequest);
 
-            var createdCategory = await _repository.AddAsync(category);
-            
-            return CreatedAtAction(nameof(GetCategory), new { id = createdCategory.Id }, createdCategory);
+            if (!response.IsValid())
+                return BadRequest(new HttpException(StatusCodes.Status400BadRequest, response.Notifications));
+
+            return response;
         }
 
         [HttpPut("{id}")]
-        public async Task<IActionResult> UpdateCategory(int id, CategoryRequest categoryRequest)
+        public async Task<ActionResult<CategoryReponse>> UpdateCategory(int id, CategoryRequest categoryRequest)
         {
-            var category = await _repository.GetByIdAsync(id);
-            if (category == null) return NotFound();
+            var response = await _service.UpdateCategory(id, categoryRequest);
 
-            await _repository.UpdateAsync(CategoryMapper.CategoryMapperDto(categoryRequest));
+            if (!response.IsValid())
+                return BadRequest(new HttpException(StatusCodes.Status400BadRequest, response.Notifications));
 
-            return NoContent();
+            return response;
         }
 
         [HttpDelete("{id}")]
-        public async Task<IActionResult> DeleteCategory(int id)
+        public async Task<ActionResult<CategoryReponse>> DeleteCategory(int id)
         {
-            var category = await _repository.GetByIdAsync(id);
-            if (category == null) return NotFound();
+            var response = await _service.DeleteCategory(id);
 
-            await _repository.DeleteAsync(id);
+            if (!response.IsValid())
+                return BadRequest(new HttpException(StatusCodes.Status400BadRequest, response.Notifications));
 
-            return NoContent();
+            return response;
         }
     }
 }

@@ -17,6 +17,7 @@
         public string Email { get; private set; }
         public string Address { get; private set; }
         public string PhoneNumber { get; private set; }
+        public DateTime CreatedAt { get; private set; }
 
         public int AddId(int id) {
             return Id = id;

@@ -1,8 +1,11 @@
-﻿using InventoryManagement.Dto.Request;
+﻿using Azure;
+using InventoryManagement.Dto.Request;
 using InventoryManagement.Dto.Response;
 using InventoryManagement.Mapper;
 using InventoryManagement.Models;
 using InventoryManagement.Repository;
+using InventoryManagement.Service;
+using InventoryManagement.Settings.HttpException;
 using Microsoft.AspNetCore.Mvc;
 
 namespace InventoryManagement.Controllers
@@ -11,59 +14,36 @@ namespace InventoryManagement.Controllers
     [ApiController]
     public class OrderItemController : Controller
     {
-        private readonly OrderItemRepository _repository;
+        private readonly OrderItemService _service;
 
-        public OrderItemController(OrderItemRepository repository)
+        public OrderItemController(OrderItemService service)
         {
-            _repository = repository;
+            _service = service;
         }
 
         [HttpGet]
         public async Task<ActionResult<IEnumerable<OrderItemResponse>>> GetOrderItems()
         {
-            var orderItemResponse = new List<OrderItemResponse>();
+            var response = await _service.GetOrderItems();
 
-            var orderItems = await _repository.GetAllAsync();
-
-            foreach (var item in orderItems)
+            if (!response.All(item => item.IsValid()))
             {
-                orderItemResponse.Add(OrderItemMapper.OrderItemMapperView(item));
+                var orderItem = response.Where(item => !item.IsValid()).FirstOrDefault();
+                return BadRequest(new HttpException(StatusCodes.Status400BadRequest, orderItem.Notifications));
             }
 
-            return orderItemResponse;
+            return response;
         }
 
         [HttpGet("{id}")]
         public async Task<ActionResult<OrderItemResponse>> GetOrderItem(int id)
         {
-            var orderItemResponse = new OrderItemResponse();
+            var response = await _service.GetOrderItem(id);
 
-            var orderItem = await _repository.GetByIdAsync(id);
-            if (orderItem == null) return NotFound();
+            if (!response.IsValid())
+                return BadRequest(new HttpException(StatusCodes.Status400BadRequest, response.Notifications));
 
-            orderItemResponse = OrderItemMapper.OrderItemMapperView(orderItem);
-
-            return orderItemResponse;
-        }
-
-        [HttpPut("{id}")]
-        public async Task<IActionResult> UpdateOrderItem(int id, OrderItemRequest orderItemRequest)
-        {
-            var orderItem = await _repository.GetByIdAsync(id);
-            if (orderItem == null) return NotFound();
-
-            await _repository.UpdateAsync(OrderItemMapper.OrderItemMapperDto(orderItemRequest));
-            return NoContent();
-        }
-
-        [HttpDelete("{id}")]
-        public async Task<IActionResult> DeleteProduct(int id)
-        {
-            var orderItem = await _repository.GetByIdAsync(id);
-            if (orderItem == null) return NotFound();
-
-            await _repository.DeleteAsync(id);
-            return NoContent();
+            return response;
         }
     }
 }

@@ -1,8 +1,8 @@
-﻿using InventoryManagement.Dto.Request;
+﻿using Azure;
+using InventoryManagement.Dto.Request;
 using InventoryManagement.Dto.Response;
-using InventoryManagement.Mapper;
-using InventoryManagement.Models;
-using InventoryManagement.Repository;
+using InventoryManagement.Service;
+using InventoryManagement.Settings.HttpException;
 using Microsoft.AspNetCore.Mvc;
 
 namespace InventoryManagement.Controllers
@@ -11,72 +11,69 @@ namespace InventoryManagement.Controllers
     [ApiController]
     public class CustomerController : Controller
     {
-        private readonly CustomerRepository _repository;
+        private readonly CustomerService _service;
 
-        public CustomerController(CustomerRepository repository)
+        public CustomerController(CustomerService service)
         {
-            _repository = repository;
+            _service = service;
         }
 
         [HttpGet]
-        public async Task<ActionResult<IEnumerable<CustomerResponse>>> GetCustomers()
+        public async Task<ActionResult<List<CustomerResponse>>> GetCustomers()
         {
-            var customerResponse = new List<CustomerResponse>();
+            var response = await _service.GetCustomers();
 
-            var customers = await _repository.GetAllAsync();
-
-            foreach (var item in customers)
+            if (!response.All(item => item.IsValid()))
             {
-                customerResponse.Add(CustomerMapper.CustomerMapperView(item));
+                var customer = response.Where(item => !item.IsValid()).FirstOrDefault();
+                return BadRequest(new HttpException(StatusCodes.Status400BadRequest, customer.Notifications));
             }
 
-            return customerResponse;
+            return response;
         }
 
         [HttpGet("{id}")]
         public async Task<ActionResult<CustomerResponse>> GetCustomer(int id)
         {
-            var customerResponse = new CustomerResponse();
+            var response = await _service.GetCustomer(id);
 
-            var customer = await _repository.GetByIdAsync(id);
+            if (!response.IsValid())
+                return BadRequest(new HttpException(StatusCodes.Status400BadRequest, response.Notifications));
 
-            if (customer == null) return NotFound();
-
-            customerResponse = CustomerMapper.CustomerMapperView(customer);
-
-            return customerResponse;
+            return response;
         }
 
         [HttpPost]
-        public async Task<ActionResult<Customer>> CreateCustomer(CustomerRequest customerRequest)
+        public async Task<ActionResult<CustomerResponse>> CreateCustomer(CustomerRequest customerRequest)
         {
-            var customer = CustomerMapper.CustomerMapperDto(customerRequest);
+            var response = await _service.CreateCustomer(customerRequest);
 
-            var createdCustomer = await _repository.AddAsync(customer);
+            if (!response.IsValid())
+                return BadRequest(new HttpException(StatusCodes.Status400BadRequest, response.Notifications));
 
-            return CreatedAtAction(nameof(GetCustomer), new { id = createdCustomer.Id }, createdCustomer);
+            return response;
         }
 
         [HttpPut("{id}")]
-        public async Task<IActionResult> UpdateCustomer(int id, Customer customer)
+        public async Task<ActionResult<CustomerResponse>> UpdateCustomer(int id, CustomerRequest customerRequest)
         {
-            if (id != customer.Id) return BadRequest();
+            var response = await _service.UpdateCustomer(id, customerRequest);
 
-            await _repository.UpdateAsync(customer);
+            if (!response.IsValid())
+                return BadRequest(new HttpException(StatusCodes.Status400BadRequest, response.Notifications));
 
-            return NoContent();
+            return response;
         }
 
         [HttpDelete("{id}")]
-        public async Task<IActionResult> DeleteCustomer(int id)
+        public async Task<ActionResult<CustomerResponse>> DeleteCustomer(int id)
         {
-            var customer = await _repository.GetByIdAsync(id);
-            
-            if (customer == null) return NotFound();
+            var response = await _service.DeleteCustomer(id);
 
-            await _repository.DeleteAsync(id);
+            if (!response.IsValid())
+                return BadRequest(new HttpException(StatusCodes.Status400BadRequest, response.Notifications));
 
-            return NoContent();
+            return response;
         }
     }
 }

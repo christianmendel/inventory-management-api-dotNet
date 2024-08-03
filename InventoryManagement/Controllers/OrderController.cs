@@ -1,8 +1,12 @@
-﻿using InventoryManagement.Dto.Request;
+﻿using InventoryManagement.Contracts.Repository;
+using InventoryManagement.Dto.Request;
 using InventoryManagement.Dto.Response;
 using InventoryManagement.Mapper;
 using InventoryManagement.Models;
 using InventoryManagement.Repository;
+using InventoryManagement.Service;
+using InventoryManagement.Settings.HttpException;
+using InventoryManagement.Settings.Validations;
 using Microsoft.AspNetCore.Mvc;
 
 namespace InventoryManagement.Controllers
@@ -11,76 +15,69 @@ namespace InventoryManagement.Controllers
     [ApiController]
     public class OrderController : Controller
     {
-        private readonly OrderRepository _repository;
+        private readonly OrderService _service;
 
-        public OrderController(OrderRepository repository)
+        public OrderController(OrderService service)
         {
-            _repository = repository;
+            _service = service;
         }
 
         [HttpGet]
-        public async Task<ActionResult<IEnumerable<OrderResponse>>> GetOrders()
+        public async Task<ActionResult<List<OrderResponse>>> GetOrders()
         {
-            var orderResponse = new List<OrderResponse>();
+            var response = await _service.GetOrders();
 
-            var orders = await _repository.GetAllAsync();
-
-            foreach (var item in orders)
+            if (!response.All(item => item.IsValid()))
             {
-                orderResponse.Add(OrderMapper.OrderMapperView(item));
+                var order = response.Where(item => !item.IsValid()).FirstOrDefault();
+                return BadRequest(new HttpException(StatusCodes.Status400BadRequest, order.Notifications));
             }
 
-            return orderResponse;
+            return response;
         }
 
         [HttpGet("{id}")]
         public async Task<ActionResult<OrderResponse>> GetOrder(int id)
         {
-            var orderResponse = new OrderResponse();
+            var response = await _service.GetOrder(id);
 
-            var order = await _repository.GetByIdAsync(id);
-            if (order == null) return NotFound();
+            if (!response.IsValid())
+                return BadRequest(new HttpException(StatusCodes.Status400BadRequest, response.Notifications));
 
-            orderResponse = OrderMapper.OrderMapperView(order);
-
-            return orderResponse;
+            return response;
         }
 
         [HttpPost]
-        public async Task<ActionResult<Order>> CreateOrder(OrderRequest orderRequest)
+        public async Task<ActionResult<OrderResponse>> CreateOrder(OrderRequest orderRequest)
         {
-            var order = OrderMapper.OrderMapperDto(orderRequest);
-            var orderItems = new List<OrderItem>();
-            
-            foreach (var item in orderRequest.orderItems)
-            {
-                orderItems.Add(OrderItemMapper.OrderItemMapperDto(item));
-            }
+            var response = await _service.CreateOrder(orderRequest);
 
-            order.AddListOrderItems(orderItems);
+            if (!response.IsValid())
+                return BadRequest(new HttpException(StatusCodes.Status400BadRequest, response.Notifications));
 
-            var createdOrder = await _repository.AddAsync(order);
-            return CreatedAtAction(nameof(GetOrder), new { id = createdOrder.Id }, createdOrder);
+            return response;
         }
 
         [HttpPut("{id}")]
-        public async Task<IActionResult> UpdateOrder(int id, OrderRequest orderRequest)
+        public async Task<ActionResult<OrderResponse>> UpdateOrder(int id, OrderRequest orderRequest)
         {
-            var order = await _repository.GetByIdAsync(id);
-            if (order == null) return NotFound();
+            var response = await _service.UpdateOrder(id, orderRequest);
 
-            await _repository.UpdateAsync(OrderMapper.OrderMapperDto(orderRequest));
-            return NoContent();
+            if (!response.IsValid())
+                return BadRequest(new HttpException(StatusCodes.Status400BadRequest, response.Notifications));
+
+            return response;
         }
 
         [HttpDelete("{id}")]
-        public async Task<IActionResult> DeleteOrder(int id)
+        public async Task<ActionResult<OrderResponse>> DeleteOrder(int id)
         {
-            var order = await _repository.GetByIdAsync(id);
-            if (order == null) return NotFound();
+            var response = await _service.DeleteOrder(id);
 
-            await _repository.DeleteAsync(id);
-            return NoContent();
+            if (!response.IsValid())
+                return BadRequest(new HttpException(StatusCodes.Status400BadRequest, response.Notifications));
+
+            return response;
         }
     }
 }

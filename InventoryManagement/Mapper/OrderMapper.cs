@@ -9,7 +9,7 @@ namespace InventoryManagement.Mapper
     {
         public static Order OrderMapperDto(OrderRequest orderRequest)
         {
-            return new Order(orderRequest.CustomerId, orderRequest.Status);
+            return new Order(orderRequest.CustomerId, orderRequest.Status, orderRequest.orderItems.Select(item => OrderItemMapper.OrderItemMapperDto(item)).AsList());
         }
 
         public static OrderResponse OrderMapperView(Order order)

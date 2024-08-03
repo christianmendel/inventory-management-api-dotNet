@@ -2,10 +2,11 @@
 using InventoryManagement.Settings.Base;
 using InventoryManagement.Models;
 using System.Data;
+using InventoryManagement.Contracts.Repository;
 
 namespace InventoryManagement.Repository
 {
-    public class CustomerRepository : RepositoryBase
+    public class CustomerRepository : RepositoryBase, ICustomerRepository
     {
         public CustomerRepository(IDbConnection dbConnection) : base(dbConnection) { }
 

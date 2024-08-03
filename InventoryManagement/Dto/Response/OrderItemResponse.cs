@@ -1,6 +1,8 @@
-﻿namespace InventoryManagement.Dto.Response
+﻿using InventoryManagement.Settings.Validations;
+
+namespace InventoryManagement.Dto.Response
 {
-    public class OrderItemResponse
+    public class OrderItemResponse : Notifiable
     {
         public int Id { get; set; }
         public int OrderId { get; set; }

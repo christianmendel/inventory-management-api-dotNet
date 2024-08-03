@@ -1,8 +1,8 @@
 ﻿using InventoryManagement.Dto.Request;
 using InventoryManagement.Dto.Response;
-using InventoryManagement.Mapper;
-using InventoryManagement.Models;
-using InventoryManagement.Repository;
+using InventoryManagement.Service;
+using InventoryManagement.Settings.HttpException;
+using InventoryManagement.Settings.Validations;
 using Microsoft.AspNetCore.Mvc;
 
 namespace InventoryManagement.Controllers
@@ -11,67 +11,68 @@ namespace InventoryManagement.Controllers
     [Route("api/[controller]")]
     public class ProductController : Controller
     {
-        private readonly ProductRepository _repository;
+        private readonly ProductService _service;
 
-        public ProductController(ProductRepository repository)
+        public ProductController(ProductService service)
         {
-            _repository = repository;
+            _service = service;
         }
 
         [HttpGet]
         public async Task<ActionResult<List<ProductResponse>>> GetProducts()
         {
-            var productResponse = new List<ProductResponse>();
+            var response = await _service.GetProducts();
 
-            var products = await _repository.GetAllAsync();
-            
-            foreach (var item in products)
+            if (!response.All(livro => livro.IsValid()))
             {
-                productResponse.Add(ProductMapper.ProductMapperView(item));
+                var notValidBooks = response.Where(livro => !livro.IsValid()).Select(livro => livro.Notifications);
+                return BadRequest(notValidBooks);
             }
-            
-            return productResponse;
+
+            return response;
         }
 
         [HttpGet("{id}")]
         public async Task<ActionResult<ProductResponse>> GetProduct(int id)
         {
-            var productResponse = new ProductResponse();
+            var response = await _service.GetProduct(id);
 
-            var product = await _repository.GetByIdAsync(id);
-            if (product == null) return NotFound();
+            if (!response.IsValid())
+                return BadRequest(new HttpException(StatusCodes.Status400BadRequest, response.Notifications));
 
-            productResponse = ProductMapper.ProductMapperView(product);
-
-            return productResponse;
+            return response;
         }
 
         [HttpPost]
-        public async Task<ActionResult<Product>> CreateProduct(ProductRequest productRequest)
+        public async Task<ActionResult<ProductResponse>> CreateProduct(ProductRequest productRequest)
         {
-            var product = ProductMapper.ProductMapperDto(productRequest);
-            var createdProduct = await _repository.AddAsync(product);
-            return CreatedAtAction(nameof(GetProduct), new { id = createdProduct.Id }, createdProduct);
+            var response = await _service.CreateProduct(productRequest);
+
+            if (!response.IsValid())
+                return BadRequest(new HttpException(StatusCodes.Status400BadRequest, response.Notifications));
+
+            return response;
         }
 
         [HttpPut("{id}")]
-        public async Task<IActionResult> UpdateProduct(int id, ProductRequest productRequest)
+        public async Task<ActionResult<ProductResponse>> UpdateProduct(int id, ProductRequest productRequest)
         {
-            var product = await _repository.GetByIdAsync(id);
-            if (product == null) return NotFound();
+            var response = await _service.UpdateProduct(id, productRequest);
 
-            await _repository.UpdateAsync(ProductMapper.ProductMapperDto(productRequest));
-            return NoContent();
+            if (!response.IsValid())
+                 return BadRequest(new HttpException(StatusCodes.Status400BadRequest, response.Notifications));
+
+            return response;
         }
 
         [HttpDelete("{id}")]
-        public async Task<IActionResult> DeleteProduct(int id)
+        public async Task<ActionResult<ProductResponse>> DeleteProduct(int id)
         {
-            var product = await _repository.GetByIdAsync(id);
-            if (product == null) return NotFound();
+            var response = await _service.DeleteProduct(id);
+            if (!response.IsValid())
+                return BadRequest(new HttpException(StatusCodes.Status400BadRequest, response.Notifications));
 
-            await _repository.DeleteAsync(id);
-            return NoContent();
+            return response;
         }
     }
 }

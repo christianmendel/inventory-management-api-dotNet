@@ -4,11 +4,12 @@
     {
         public Order() { }
 
-        public Order(int customerId, string status)
+        public Order(int customerId, string status, List<OrderItem> orderItems)
         {
             CustomerId = customerId;
             OrderDate = new DateTime();
             Status = status;
+            OrderItems = orderItems;
         }
 
 
@@ -17,6 +18,7 @@
         public DateTime OrderDate { get; private set; }
         public string Status { get; private set; }
         public List<OrderItem> OrderItems { get; private set; }
+        public DateTime CreatedAt { get; private set; }
 
         public Order AddListOrderItems(List<OrderItem> orderItems)
         {

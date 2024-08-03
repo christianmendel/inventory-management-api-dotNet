@@ -2,10 +2,11 @@
 using InventoryManagement.Settings.Base;
 using InventoryManagement.Models;
 using System.Data;
+using InventoryManagement.Contracts.Repository;
 
 namespace InventoryManagement.Repository
 {
-    public class OrderItemRepository : RepositoryBase
+    public class OrderItemRepository : RepositoryBase, IOrderItemRepository
     {
         public OrderItemRepository(IDbConnection dbConnection) : base(dbConnection) { }
 

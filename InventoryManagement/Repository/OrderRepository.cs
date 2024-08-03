@@ -2,15 +2,21 @@
 using InventoryManagement.Settings.Base;
 using InventoryManagement.Models;
 using System.Data;
+using InventoryManagement.Contracts.Repository;
 
 namespace InventoryManagement.Repository
 {
-    public class OrderRepository : RepositoryBase
+    public class OrderRepository : RepositoryBase, IOrderRepository
     {
         private readonly OrderItemRepository _orderItemRepository;
-        public OrderRepository(IDbConnection dbConnection, OrderItemRepository orderItemRepository) : base(dbConnection) 
+        private readonly InventoryMovementRepository _inventoryMovementRepository;
+        private readonly ProductRepository _productRepository;
+
+        public OrderRepository(IDbConnection dbConnection, OrderItemRepository orderItemRepository, InventoryMovementRepository inventoryMovementRepository, ProductRepository productRepository) : base(dbConnection)
         {
             _orderItemRepository = orderItemRepository;
+            _inventoryMovementRepository = inventoryMovementRepository;
+            _productRepository = productRepository;
         }
 
         public async Task<Order> AddAsync(Order order)
@@ -21,8 +27,14 @@ namespace InventoryManagement.Repository
 
             foreach (var item in order.OrderItems)
             {
-                item.AddId(id);
+                item.AddOrderId(id);
                 await _orderItemRepository.AddAsync(item);
+            }
+
+            foreach (var item in order.OrderItems)
+            {
+                var inventoryMovement = new InventoryMovement(item.ProductId, item.Quantity);
+                await _inventoryMovementRepository.AddAsync(inventoryMovement);
             }
 
             return order;
