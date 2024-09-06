@@ -13,7 +13,7 @@ namespace InventoryManagement.Repository
 
         public async Task<Product> AddAsync(Product product)
         {
-            var query = "INSERT INTO products (CategoryId, Name, Description, Quantity, Price, CreatedAt) VALUES (@CategoryId, @Name, @Description, @Quantity, @Price, @CreatedAt) RETURNING id";
+            var query = "INSERT INTO products (CategoryId, Name, Description, Quantity, Price) VALUES (@CategoryId, @Name, @Description, @Quantity, @Price) RETURNING id";
             var id = await _dbConnection.ExecuteScalarAsync<int>(query, product);
             product.AddId(id);
             return product;
@@ -21,7 +21,7 @@ namespace InventoryManagement.Repository
 
         public async Task UpdateAsync(Product product)
         {
-            var query = "UPDATE products SET CategoryId = @CategoryId, Name = @Name, Description = @Description, Quantity = @Quantity, Price = @Price, CreatedAt = @CreatedAt WHERE Id = @Id";
+            var query = "UPDATE products SET CategoryId = @CategoryId, Name = @Name, Description = @Description, Quantity = @Quantity, Price = @Price WHERE Id = @Id";
             await _dbConnection.ExecuteAsync(query, product);
         }
 

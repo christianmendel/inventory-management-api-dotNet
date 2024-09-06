@@ -1,11 +1,5 @@
-﻿using Azure;
-using InventoryManagement.Dto.Request;
-using InventoryManagement.Dto.Response;
-using InventoryManagement.Mapper;
-using InventoryManagement.Models;
-using InventoryManagement.Repository;
+﻿using InventoryManagement.Dto.Response;
 using InventoryManagement.Service;
-using InventoryManagement.Settings.HttpException;
 using Microsoft.AspNetCore.Mvc;
 
 namespace InventoryManagement.Controllers
@@ -26,12 +20,6 @@ namespace InventoryManagement.Controllers
         {
             var response = await _service.GetOrderItems();
 
-            if (!response.All(item => item.IsValid()))
-            {
-                var orderItem = response.Where(item => !item.IsValid()).FirstOrDefault();
-                return BadRequest(new HttpException(StatusCodes.Status400BadRequest, orderItem.Notifications));
-            }
-
             return response;
         }
 
@@ -41,7 +29,7 @@ namespace InventoryManagement.Controllers
             var response = await _service.GetOrderItem(id);
 
             if (!response.IsValid())
-                return BadRequest(new HttpException(StatusCodes.Status400BadRequest, response.Notifications));
+                return BadRequest(response.Notifications);
 
             return response;
         }

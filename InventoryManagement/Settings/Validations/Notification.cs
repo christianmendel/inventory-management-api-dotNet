@@ -1,6 +1,4 @@
-﻿using InventoryManagement.Settings.HttpException;
-
-namespace InventoryManagement.Settings.Validations
+﻿namespace InventoryManagement.Settings.Validations
 {
     public class Notification
     {

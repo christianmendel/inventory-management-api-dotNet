@@ -2,9 +2,7 @@
 using InventoryManagement.Dto.Response;
 using InventoryManagement.Mapper;
 using InventoryManagement.Repository;
-using InventoryManagement.Settings.HttpException;
 using InventoryManagement.Settings.Validations;
-using Microsoft.AspNetCore.Mvc;
 
 namespace InventoryManagement.Service
 {

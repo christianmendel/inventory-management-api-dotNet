@@ -5,7 +5,6 @@ using InventoryManagement.Mapper;
 using InventoryManagement.Models;
 using InventoryManagement.Repository;
 using InventoryManagement.Settings.Validations;
-using Microsoft.AspNetCore.Mvc;
 
 namespace InventoryManagement.Service
 {
@@ -70,9 +69,12 @@ namespace InventoryManagement.Service
                 return response;
             };
 
-            await _repository.UpdateAsync(CategoryMapper.CategoryMapperDto(categoryRequest));
+            Category category = CategoryMapper.CategoryMapperDto(categoryRequest);
+            category.AddId(id);
 
-            return response;
+            await _repository.UpdateAsync(category);
+
+            return await GetCategory(id);
         }
 
         public async Task<CategoryReponse> DeleteCategory(int id)

@@ -70,9 +70,12 @@ namespace InventoryManagement.Service
                 return response;
             };
 
-            await _repository.UpdateAsync(CustomerMapper.CustomerMapperDto(customerRequest));
+            Customer customer = CustomerMapper.CustomerMapperDto(customerRequest);
+            customer.AddId(id);
 
-            return response;
+            await _repository.UpdateAsync(customer);
+
+            return await GetCustomer(id);
         }
 
         public async Task<CustomerResponse> DeleteCustomer(int id)

@@ -1,8 +1,6 @@
 ﻿using InventoryManagement.Dto.Request;
 using InventoryManagement.Dto.Response;
 using InventoryManagement.Service;
-using InventoryManagement.Settings.HttpException;
-using InventoryManagement.Settings.Validations;
 using Microsoft.AspNetCore.Mvc;
 
 namespace InventoryManagement.Controllers
@@ -23,12 +21,6 @@ namespace InventoryManagement.Controllers
         {
             var response = await _service.GetProducts();
 
-            if (!response.All(livro => livro.IsValid()))
-            {
-                var notValidBooks = response.Where(livro => !livro.IsValid()).Select(livro => livro.Notifications);
-                return BadRequest(notValidBooks);
-            }
-
             return response;
         }
 
@@ -38,7 +30,7 @@ namespace InventoryManagement.Controllers
             var response = await _service.GetProduct(id);
 
             if (!response.IsValid())
-                return BadRequest(new HttpException(StatusCodes.Status400BadRequest, response.Notifications));
+                return BadRequest(response.Notifications);
 
             return response;
         }
@@ -49,7 +41,7 @@ namespace InventoryManagement.Controllers
             var response = await _service.CreateProduct(productRequest);
 
             if (!response.IsValid())
-                return BadRequest(new HttpException(StatusCodes.Status400BadRequest, response.Notifications));
+                return BadRequest(response.Notifications);
 
             return response;
         }
@@ -60,7 +52,7 @@ namespace InventoryManagement.Controllers
             var response = await _service.UpdateProduct(id, productRequest);
 
             if (!response.IsValid())
-                 return BadRequest(new HttpException(StatusCodes.Status400BadRequest, response.Notifications));
+                 return BadRequest(response.Notifications);
 
             return response;
         }
@@ -70,7 +62,7 @@ namespace InventoryManagement.Controllers
         {
             var response = await _service.DeleteProduct(id);
             if (!response.IsValid())
-                return BadRequest(new HttpException(StatusCodes.Status400BadRequest, response.Notifications));
+                return BadRequest(response.Notifications);
 
             return response;
         }

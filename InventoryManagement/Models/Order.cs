@@ -7,7 +7,6 @@
         public Order(int customerId, string status, List<OrderItem> orderItems)
         {
             CustomerId = customerId;
-            OrderDate = new DateTime();
             Status = status;
             OrderItems = orderItems;
         }

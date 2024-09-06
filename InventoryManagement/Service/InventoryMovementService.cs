@@ -1,4 +1,5 @@
-﻿using InventoryManagement.Dto.Request;
+﻿using InventoryManagement.Contracts.Service;
+using InventoryManagement.Dto.Request;
 using InventoryManagement.Dto.Response;
 using InventoryManagement.Mapper;
 using InventoryManagement.Models;
@@ -8,7 +9,7 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace InventoryManagement.Service
 {
-    public class InventoryMovementService
+    public class InventoryMovementService : IInventoryMovementService
     {
         private readonly InventoryMovementRepository _repository;
 

@@ -25,5 +25,10 @@
         {
             return Id = id;
         }
+
+        public int UpdateQuantityMinus(int quantity)
+        {
+            return Quantity = Quantity - quantity;
+        }
     }
 }

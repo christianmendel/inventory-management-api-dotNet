@@ -70,9 +70,12 @@ namespace InventoryManagement.Service
                 return response;
             };
 
-            await _repository.UpdateAsync(ProductMapper.ProductMapperDto(productRequest));
+            Product product = ProductMapper.ProductMapperDto(productRequest);
+            product.AddId(id);
 
-            return response;
+            await _repository.UpdateAsync(product);
+
+            return await GetProduct(id);
         }
 
         public async Task<ProductResponse> DeleteProduct(int id)

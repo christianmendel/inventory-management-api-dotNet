@@ -1,8 +1,6 @@
-﻿using Azure;
-using InventoryManagement.Dto.Request;
+﻿using InventoryManagement.Dto.Request;
 using InventoryManagement.Dto.Response;
 using InventoryManagement.Service;
-using InventoryManagement.Settings.HttpException;
 using Microsoft.AspNetCore.Mvc;
 
 namespace InventoryManagement.Controllers
@@ -23,12 +21,6 @@ namespace InventoryManagement.Controllers
         {
             var response = await _service.GetCustomers();
 
-            if (!response.All(item => item.IsValid()))
-            {
-                var customer = response.Where(item => !item.IsValid()).FirstOrDefault();
-                return BadRequest(new HttpException(StatusCodes.Status400BadRequest, customer.Notifications));
-            }
-
             return response;
         }
 
@@ -38,7 +30,7 @@ namespace InventoryManagement.Controllers
             var response = await _service.GetCustomer(id);
 
             if (!response.IsValid())
-                return BadRequest(new HttpException(StatusCodes.Status400BadRequest, response.Notifications));
+                return BadRequest(response.Notifications);
 
             return response;
         }
@@ -49,7 +41,7 @@ namespace InventoryManagement.Controllers
             var response = await _service.CreateCustomer(customerRequest);
 
             if (!response.IsValid())
-                return BadRequest(new HttpException(StatusCodes.Status400BadRequest, response.Notifications));
+                return BadRequest(response.Notifications);
 
             return response;
         }
@@ -60,7 +52,7 @@ namespace InventoryManagement.Controllers
             var response = await _service.UpdateCustomer(id, customerRequest);
 
             if (!response.IsValid())
-                return BadRequest(new HttpException(StatusCodes.Status400BadRequest, response.Notifications));
+                return BadRequest(response.Notifications);
 
             return response;
         }
@@ -71,7 +63,7 @@ namespace InventoryManagement.Controllers
             var response = await _service.DeleteCustomer(id);
 
             if (!response.IsValid())
-                return BadRequest(new HttpException(StatusCodes.Status400BadRequest, response.Notifications));
+                return BadRequest(response.Notifications);
 
             return response;
         }

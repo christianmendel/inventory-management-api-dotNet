@@ -21,7 +21,7 @@ namespace InventoryManagement.Repository
 
         public async Task<Order> AddAsync(Order order)
         {
-            var query = "INSERT INTO orders (CustomerId, OrderDate, Status) VALUES (@CustomerId, @OrderDate, @Status) RETURNING id";
+            var query = "INSERT INTO orders (CustomerId, Status) VALUES (@CustomerId, @Status) RETURNING id";
             var id = await _dbConnection.ExecuteScalarAsync<int>(query, order);
             order.AddId(id);
 
@@ -29,6 +29,11 @@ namespace InventoryManagement.Repository
             {
                 item.AddOrderId(id);
                 await _orderItemRepository.AddAsync(item);
+
+                var produto = await _productRepository.GetByIdAsync(item.ProductId);
+
+                produto.UpdateQuantityMinus(item.Quantity);
+                await _productRepository.UpdateAsync(produto);
             }
 
             foreach (var item in order.OrderItems)
@@ -42,7 +47,7 @@ namespace InventoryManagement.Repository
 
         public async Task UpdateAsync(Order order)
         {
-            var query = "UPDATE orders SET CustomerId = @CustomerId, OrderDate = @OrderDate, Status = @Status WHERE Id = @Id";
+            var query = "UPDATE orders SET CustomerId = @CustomerId, Status = @Status WHERE Id = @Id";
             await _dbConnection.ExecuteAsync(query, order);
         }
 

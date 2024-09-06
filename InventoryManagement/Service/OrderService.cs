@@ -2,20 +2,22 @@
 using InventoryManagement.Dto.Request;
 using InventoryManagement.Dto.Response;
 using InventoryManagement.Mapper;
+using InventoryManagement.Models;
 using InventoryManagement.Repository;
 using InventoryManagement.Settings.Validations;
-using Microsoft.AspNetCore.Mvc;
 
 namespace InventoryManagement.Service
 {
     public class OrderService : IOrderService
     {
         private readonly OrderRepository _repository;
+        private readonly OrderItemRepository _orderItemRepository;
         private readonly ProductRepository _productRepository;
 
-        public OrderService(OrderRepository repository, ProductRepository productRepository)
+        public OrderService(OrderRepository repository, OrderItemRepository orderItemRepository, ProductRepository productRepository)
         {
             _repository = repository;
+            _orderItemRepository = orderItemRepository;
             _productRepository = productRepository;
         }
 
@@ -41,10 +43,12 @@ namespace InventoryManagement.Service
 
             if (result == null)
             {
-                response.AddNotification(new Notification("Comprador não encotrado!"));
+                response.AddNotification(new Notification("Ordem não encotrada!"));
                 return response;
             };
 
+            IEnumerable<OrderItem> orderItems = await _orderItemRepository.GetAllByOrderIdAsync(id);
+            result.AddListOrderItems(orderItems.ToList());
             response = OrderMapper.OrderMapperView(result);
 
             return response;
@@ -52,7 +56,26 @@ namespace InventoryManagement.Service
 
         public async Task<OrderResponse> CreateOrder(OrderRequest orderRequest)
         {
+            var response = new OrderResponse();
+
             var result = OrderMapper.OrderMapperDto(orderRequest);
+
+            foreach (var orderItem in orderRequest.orderItems)
+            {
+
+                var product = await _productRepository.GetByIdAsync(orderItem.ProductId);
+
+                if (product == null) {
+                    response.AddNotification(new Notification("Produto não encotrado!"));
+                    return response;
+                }
+
+                if (orderItem.Quantity > product.Quantity)
+                {
+                    response.AddNotification(new Notification("Produto não tem essa quantidade"));
+                    return response;
+                }
+            }
 
             var order = await _repository.AddAsync(result);
 
@@ -71,9 +94,12 @@ namespace InventoryManagement.Service
                 return response;
             };
 
-            await _repository.UpdateAsync(OrderMapper.OrderMapperDto(orderRequest));
+            Order order = OrderMapper.OrderMapperDto(orderRequest);
+            order.AddId(id);
 
-            return response;
+            await _repository.UpdateAsync(order);
+
+            return await GetOrder(id);
         }
 
         public async Task<OrderResponse> DeleteOrder(int id)
