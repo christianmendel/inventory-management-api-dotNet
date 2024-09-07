@@ -50,9 +50,7 @@ namespace InventoryManagement.Service
 
         public async Task<CategoryReponse> CreateCategory(CategoryRequest categoryRequest)
         {
-            var result = CategoryMapper.CategoryMapperDto(categoryRequest);
-
-            var category = await _repository.AddAsync(result);
+            var category = await _repository.AddAsync(CategoryMapper.CategoryMapperDto(categoryRequest));
 
             return await GetCategory(category.Id);
         }

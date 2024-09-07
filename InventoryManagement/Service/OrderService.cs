@@ -58,8 +58,6 @@ namespace InventoryManagement.Service
         {
             var response = new OrderResponse();
 
-            var result = OrderMapper.OrderMapperDto(orderRequest);
-
             foreach (var orderItem in orderRequest.orderItems)
             {
 
@@ -77,9 +75,9 @@ namespace InventoryManagement.Service
                 }
             }
 
-            var order = await _repository.AddAsync(result);
+            var result = await _repository.AddAsync(OrderMapper.OrderMapperDto(orderRequest));
 
-            return await GetOrder(order.Id);
+            return await GetOrder(result.Id);
         }
 
         public async Task<OrderResponse> UpdateOrder(int id, OrderRequest orderRequest)

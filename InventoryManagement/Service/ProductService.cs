@@ -5,17 +5,18 @@ using InventoryManagement.Mapper;
 using InventoryManagement.Models;
 using InventoryManagement.Repository;
 using InventoryManagement.Settings.Validations;
-using Microsoft.AspNetCore.Mvc;
 
 namespace InventoryManagement.Service
 {
     public class ProductService : IProductService
     {
         private readonly ProductRepository _repository;
+        private readonly CategoryRepository _categoryRepository;
 
-        public ProductService(ProductRepository repository)
+        public ProductService(ProductRepository repository, CategoryRepository categoryRepository)
         {
             _repository = repository;
+            _categoryRepository = categoryRepository;
         }
 
         public async Task<List<ProductResponse>> GetProducts()
@@ -51,11 +52,21 @@ namespace InventoryManagement.Service
 
         public async Task<ProductResponse> CreateProduct(ProductRequest productRequest)
         {
-            var result = ProductMapper.ProductMapperDto(productRequest);
+            var response = new ProductResponse();
 
-            var product = await _repository.AddAsync(result);
+            var category = await _categoryRepository.GetByIdAsync(productRequest.CategoryId);
+            
+            if (category == null)
+            {
+                response.AddNotification(new Notification("Categoria não encotrada!"));
+                return response;
+            };
 
-            return await GetProduct(product.Id);
+            var product = await _repository.AddAsync(ProductMapper.ProductMapperDto(productRequest));
+
+            response = await GetProduct(product.Id);
+
+            return response;
         }
 
         public async Task<ProductResponse> UpdateProduct(int id, ProductRequest productRequest)
@@ -67,6 +78,14 @@ namespace InventoryManagement.Service
             if (result == null)
             {
                 response.AddNotification(new Notification("Produto não encotrado!"));
+                return response;
+            };
+
+            var category = await _categoryRepository.GetByIdAsync(productRequest.CategoryId);
+
+            if (category == null)
+            {
+                response.AddNotification(new Notification("Categoria não encotrada!"));
                 return response;
             };
 

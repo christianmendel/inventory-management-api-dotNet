@@ -1,11 +1,8 @@
 ﻿using InventoryManagement.Contracts.Service;
-using InventoryManagement.Dto.Request;
 using InventoryManagement.Dto.Response;
 using InventoryManagement.Mapper;
-using InventoryManagement.Models;
 using InventoryManagement.Repository;
 using InventoryManagement.Settings.Validations;
-using Microsoft.AspNetCore.Mvc;
 
 namespace InventoryManagement.Service
 {

@@ -2,7 +2,6 @@
 using InventoryManagement.Settings.Base;
 using InventoryManagement.Models;
 using System.Data;
-using System.Data.Common;
 using InventoryManagement.Contracts.Repository;
 
 namespace InventoryManagement.Repository

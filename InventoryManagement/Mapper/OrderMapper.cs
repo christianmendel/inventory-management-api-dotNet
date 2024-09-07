@@ -1,5 +1,4 @@
-﻿using Dapper;
-using InventoryManagement.Dto.Request;
+﻿using InventoryManagement.Dto.Request;
 using InventoryManagement.Dto.Response;
 using InventoryManagement.Models;
 
@@ -9,7 +8,7 @@ namespace InventoryManagement.Mapper
     {
         public static Order OrderMapperDto(OrderRequest orderRequest)
         {
-            return new Order(orderRequest.CustomerId, orderRequest.Status, orderRequest.orderItems.Select(item => OrderItemMapper.OrderItemMapperDto(item)).AsList());
+            return new Order(orderRequest.CustomerId, orderRequest.Status, orderRequest.orderItems.Select(item => OrderItemMapper.OrderItemMapperDto(item)).ToList());
         }
 
         public static OrderResponse OrderMapperView(Order order)
@@ -20,7 +19,7 @@ namespace InventoryManagement.Mapper
                 CustomerId = order.CustomerId,
                 Status = order.Status,
                 OrderDate = order.OrderDate,
-                orderItems = order.OrderItems.Select(item => OrderItemMapper.OrderItemMapperView(item)).AsList()
+                orderItems = order.OrderItems.Select(item => OrderItemMapper.OrderItemMapperView(item)).ToList(),
             };
         }
     }
