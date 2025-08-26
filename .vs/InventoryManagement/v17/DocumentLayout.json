@@ -1,0 +1,389 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\chris\\OneDrive\\Documents\\Projects\\inventory-management-api-dotNet\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{EC2D2CB0-9427-44B8-A243-88A8ECB44A0B}|InventoryManagement\\InventoryManagement.csproj|c:\\users\\chris\\onedrive\\documents\\projects\\inventory-management-api-dotnet\\inventorymanagement\\service\\productservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EC2D2CB0-9427-44B8-A243-88A8ECB44A0B}|InventoryManagement\\InventoryManagement.csproj|solutionrelative:inventorymanagement\\service\\productservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EC2D2CB0-9427-44B8-A243-88A8ECB44A0B}|InventoryManagement\\InventoryManagement.csproj|c:\\users\\chris\\onedrive\\documents\\projects\\inventory-management-api-dotnet\\inventorymanagement\\service\\orderservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EC2D2CB0-9427-44B8-A243-88A8ECB44A0B}|InventoryManagement\\InventoryManagement.csproj|solutionrelative:inventorymanagement\\service\\orderservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EC2D2CB0-9427-44B8-A243-88A8ECB44A0B}|InventoryManagement\\InventoryManagement.csproj|c:\\users\\chris\\onedrive\\documents\\projects\\inventory-management-api-dotnet\\inventorymanagement\\service\\orderitemservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EC2D2CB0-9427-44B8-A243-88A8ECB44A0B}|InventoryManagement\\InventoryManagement.csproj|solutionrelative:inventorymanagement\\service\\orderitemservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EC2D2CB0-9427-44B8-A243-88A8ECB44A0B}|InventoryManagement\\InventoryManagement.csproj|c:\\users\\chris\\onedrive\\documents\\projects\\inventory-management-api-dotnet\\inventorymanagement\\service\\inventorymovementservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EC2D2CB0-9427-44B8-A243-88A8ECB44A0B}|InventoryManagement\\InventoryManagement.csproj|solutionrelative:inventorymanagement\\service\\inventorymovementservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EC2D2CB0-9427-44B8-A243-88A8ECB44A0B}|InventoryManagement\\InventoryManagement.csproj|c:\\users\\chris\\onedrive\\documents\\projects\\inventory-management-api-dotnet\\inventorymanagement\\service\\customerservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EC2D2CB0-9427-44B8-A243-88A8ECB44A0B}|InventoryManagement\\InventoryManagement.csproj|solutionrelative:inventorymanagement\\service\\customerservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EC2D2CB0-9427-44B8-A243-88A8ECB44A0B}|InventoryManagement\\InventoryManagement.csproj|c:\\users\\chris\\onedrive\\documents\\projects\\inventory-management-api-dotnet\\inventorymanagement\\service\\categoryservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EC2D2CB0-9427-44B8-A243-88A8ECB44A0B}|InventoryManagement\\InventoryManagement.csproj|solutionrelative:inventorymanagement\\service\\categoryservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EC2D2CB0-9427-44B8-A243-88A8ECB44A0B}|InventoryManagement\\InventoryManagement.csproj|c:\\users\\chris\\onedrive\\documents\\projects\\inventory-management-api-dotnet\\inventorymanagement\\controllers\\categorycontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EC2D2CB0-9427-44B8-A243-88A8ECB44A0B}|InventoryManagement\\InventoryManagement.csproj|solutionrelative:inventorymanagement\\controllers\\categorycontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EC2D2CB0-9427-44B8-A243-88A8ECB44A0B}|InventoryManagement\\InventoryManagement.csproj|c:\\users\\chris\\onedrive\\documents\\projects\\inventory-management-api-dotnet\\inventorymanagement\\controllers\\orderitemcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EC2D2CB0-9427-44B8-A243-88A8ECB44A0B}|InventoryManagement\\InventoryManagement.csproj|solutionrelative:inventorymanagement\\controllers\\orderitemcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EC2D2CB0-9427-44B8-A243-88A8ECB44A0B}|InventoryManagement\\InventoryManagement.csproj|c:\\users\\chris\\onedrive\\documents\\projects\\inventory-management-api-dotnet\\inventorymanagement\\controllers\\inventorymovementcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EC2D2CB0-9427-44B8-A243-88A8ECB44A0B}|InventoryManagement\\InventoryManagement.csproj|solutionrelative:inventorymanagement\\controllers\\inventorymovementcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EC2D2CB0-9427-44B8-A243-88A8ECB44A0B}|InventoryManagement\\InventoryManagement.csproj|c:\\users\\chris\\onedrive\\documents\\projects\\inventory-management-api-dotnet\\inventorymanagement\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{EC2D2CB0-9427-44B8-A243-88A8ECB44A0B}|InventoryManagement\\InventoryManagement.csproj|solutionrelative:inventorymanagement\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EC2D2CB0-9427-44B8-A243-88A8ECB44A0B}|InventoryManagement\\InventoryManagement.csproj|c:\\users\\chris\\onedrive\\documents\\projects\\inventory-management-api-dotnet\\inventorymanagement\\repository\\orderrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EC2D2CB0-9427-44B8-A243-88A8ECB44A0B}|InventoryManagement\\InventoryManagement.csproj|solutionrelative:inventorymanagement\\repository\\orderrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EC2D2CB0-9427-44B8-A243-88A8ECB44A0B}|InventoryManagement\\InventoryManagement.csproj|c:\\users\\chris\\onedrive\\documents\\projects\\inventory-management-api-dotnet\\inventorymanagement\\repository\\orderitemrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EC2D2CB0-9427-44B8-A243-88A8ECB44A0B}|InventoryManagement\\InventoryManagement.csproj|solutionrelative:inventorymanagement\\repository\\orderitemrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EC2D2CB0-9427-44B8-A243-88A8ECB44A0B}|InventoryManagement\\InventoryManagement.csproj|c:\\users\\chris\\onedrive\\documents\\projects\\inventory-management-api-dotnet\\inventorymanagement\\repository\\inventorymovementrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EC2D2CB0-9427-44B8-A243-88A8ECB44A0B}|InventoryManagement\\InventoryManagement.csproj|solutionrelative:inventorymanagement\\repository\\inventorymovementrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EC2D2CB0-9427-44B8-A243-88A8ECB44A0B}|InventoryManagement\\InventoryManagement.csproj|c:\\users\\chris\\onedrive\\documents\\projects\\inventory-management-api-dotnet\\inventorymanagement\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EC2D2CB0-9427-44B8-A243-88A8ECB44A0B}|InventoryManagement\\InventoryManagement.csproj|solutionrelative:inventorymanagement\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EC2D2CB0-9427-44B8-A243-88A8ECB44A0B}|InventoryManagement\\InventoryManagement.csproj|c:\\users\\chris\\onedrive\\documents\\projects\\inventory-management-api-dotnet\\inventorymanagement\\repository\\categoryrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EC2D2CB0-9427-44B8-A243-88A8ECB44A0B}|InventoryManagement\\InventoryManagement.csproj|solutionrelative:inventorymanagement\\repository\\categoryrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EC2D2CB0-9427-44B8-A243-88A8ECB44A0B}|InventoryManagement\\InventoryManagement.csproj|c:\\users\\chris\\onedrive\\documents\\projects\\inventory-management-api-dotnet\\inventorymanagement\\repository\\productrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EC2D2CB0-9427-44B8-A243-88A8ECB44A0B}|InventoryManagement\\InventoryManagement.csproj|solutionrelative:inventorymanagement\\repository\\productrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EC2D2CB0-9427-44B8-A243-88A8ECB44A0B}|InventoryManagement\\InventoryManagement.csproj|c:\\users\\chris\\onedrive\\documents\\projects\\inventory-management-api-dotnet\\inventorymanagement\\repository\\customerrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EC2D2CB0-9427-44B8-A243-88A8ECB44A0B}|InventoryManagement\\InventoryManagement.csproj|solutionrelative:inventorymanagement\\repository\\customerrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EC2D2CB0-9427-44B8-A243-88A8ECB44A0B}|InventoryManagement\\InventoryManagement.csproj|c:\\users\\chris\\onedrive\\documents\\projects\\inventory-management-api-dotnet\\inventorymanagement\\models\\category.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EC2D2CB0-9427-44B8-A243-88A8ECB44A0B}|InventoryManagement\\InventoryManagement.csproj|solutionrelative:inventorymanagement\\models\\category.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EC2D2CB0-9427-44B8-A243-88A8ECB44A0B}|InventoryManagement\\InventoryManagement.csproj|c:\\users\\chris\\onedrive\\documents\\projects\\inventory-management-api-dotnet\\inventorymanagement\\settings\\base\\repositorybase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EC2D2CB0-9427-44B8-A243-88A8ECB44A0B}|InventoryManagement\\InventoryManagement.csproj|solutionrelative:inventorymanagement\\settings\\base\\repositorybase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EC2D2CB0-9427-44B8-A243-88A8ECB44A0B}|InventoryManagement\\InventoryManagement.csproj|c:\\users\\chris\\onedrive\\documents\\projects\\inventory-management-api-dotnet\\inventorymanagement\\controllers\\ordercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EC2D2CB0-9427-44B8-A243-88A8ECB44A0B}|InventoryManagement\\InventoryManagement.csproj|solutionrelative:inventorymanagement\\controllers\\ordercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EC2D2CB0-9427-44B8-A243-88A8ECB44A0B}|InventoryManagement\\InventoryManagement.csproj|c:\\users\\chris\\onedrive\\documents\\projects\\inventory-management-api-dotnet\\inventorymanagement\\controllers\\customercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EC2D2CB0-9427-44B8-A243-88A8ECB44A0B}|InventoryManagement\\InventoryManagement.csproj|solutionrelative:inventorymanagement\\controllers\\customercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EC2D2CB0-9427-44B8-A243-88A8ECB44A0B}|InventoryManagement\\InventoryManagement.csproj|c:\\users\\chris\\onedrive\\documents\\projects\\inventory-management-api-dotnet\\inventorymanagement\\settings\\unitofwork\\iunitofwork.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EC2D2CB0-9427-44B8-A243-88A8ECB44A0B}|InventoryManagement\\InventoryManagement.csproj|solutionrelative:inventorymanagement\\settings\\unitofwork\\iunitofwork.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EC2D2CB0-9427-44B8-A243-88A8ECB44A0B}|InventoryManagement\\InventoryManagement.csproj|c:\\users\\chris\\onedrive\\documents\\projects\\inventory-management-api-dotnet\\inventorymanagement\\settings\\unitofwork\\unitofwork.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EC2D2CB0-9427-44B8-A243-88A8ECB44A0B}|InventoryManagement\\InventoryManagement.csproj|solutionrelative:inventorymanagement\\settings\\unitofwork\\unitofwork.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 6,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "CategoryService.cs",
+              "DocumentMoniker": "C:\\Users\\chris\\OneDrive\\Documents\\Projects\\inventory-management-api-dotNet\\InventoryManagement\\Service\\CategoryService.cs",
+              "RelativeDocumentMoniker": "InventoryManagement\\Service\\CategoryService.cs",
+              "ToolTip": "C:\\Users\\chris\\OneDrive\\Documents\\Projects\\inventory-management-api-dotNet\\InventoryManagement\\Service\\CategoryService.cs",
+              "RelativeToolTip": "InventoryManagement\\Service\\CategoryService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAlAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-25T23:54:38.813Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "CategoryController.cs",
+              "DocumentMoniker": "C:\\Users\\chris\\OneDrive\\Documents\\Projects\\inventory-management-api-dotNet\\InventoryManagement\\Controllers\\CategoryController.cs",
+              "RelativeDocumentMoniker": "InventoryManagement\\Controllers\\CategoryController.cs",
+              "ToolTip": "C:\\Users\\chris\\OneDrive\\Documents\\Projects\\inventory-management-api-dotNet\\InventoryManagement\\Controllers\\CategoryController.cs",
+              "RelativeToolTip": "InventoryManagement\\Controllers\\CategoryController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABoAAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-25T23:53:40.089Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "OrderService.cs",
+              "DocumentMoniker": "C:\\Users\\chris\\OneDrive\\Documents\\Projects\\inventory-management-api-dotNet\\InventoryManagement\\Service\\OrderService.cs",
+              "RelativeDocumentMoniker": "InventoryManagement\\Service\\OrderService.cs",
+              "ToolTip": "C:\\Users\\chris\\OneDrive\\Documents\\Projects\\inventory-management-api-dotNet\\InventoryManagement\\Service\\OrderService.cs",
+              "RelativeToolTip": "InventoryManagement\\Service\\OrderService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAlAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-25T21:31:01.776Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "CustomerService.cs",
+              "DocumentMoniker": "C:\\Users\\chris\\OneDrive\\Documents\\Projects\\inventory-management-api-dotNet\\InventoryManagement\\Service\\CustomerService.cs",
+              "RelativeDocumentMoniker": "InventoryManagement\\Service\\CustomerService.cs",
+              "ToolTip": "C:\\Users\\chris\\OneDrive\\Documents\\Projects\\inventory-management-api-dotNet\\InventoryManagement\\Service\\CustomerService.cs",
+              "RelativeToolTip": "InventoryManagement\\Service\\CustomerService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAlAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-25T23:55:13.002Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "InventoryMovementService.cs",
+              "DocumentMoniker": "C:\\Users\\chris\\OneDrive\\Documents\\Projects\\inventory-management-api-dotNet\\InventoryManagement\\Service\\InventoryMovementService.cs",
+              "RelativeDocumentMoniker": "InventoryManagement\\Service\\InventoryMovementService.cs",
+              "ToolTip": "C:\\Users\\chris\\OneDrive\\Documents\\Projects\\inventory-management-api-dotNet\\InventoryManagement\\Service\\InventoryMovementService.cs",
+              "RelativeToolTip": "InventoryManagement\\Service\\InventoryMovementService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAsAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-25T23:55:19.534Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "OrderItemService.cs",
+              "DocumentMoniker": "C:\\Users\\chris\\OneDrive\\Documents\\Projects\\inventory-management-api-dotNet\\InventoryManagement\\Service\\OrderItemService.cs",
+              "RelativeDocumentMoniker": "InventoryManagement\\Service\\OrderItemService.cs",
+              "ToolTip": "C:\\Users\\chris\\OneDrive\\Documents\\Projects\\inventory-management-api-dotNet\\InventoryManagement\\Service\\OrderItemService.cs",
+              "RelativeToolTip": "InventoryManagement\\Service\\OrderItemService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAAlAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-25T23:55:26.616Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "ProductService.cs",
+              "DocumentMoniker": "C:\\Users\\chris\\OneDrive\\Documents\\Projects\\inventory-management-api-dotNet\\InventoryManagement\\Service\\ProductService.cs",
+              "RelativeDocumentMoniker": "InventoryManagement\\Service\\ProductService.cs",
+              "ToolTip": "C:\\Users\\chris\\OneDrive\\Documents\\Projects\\inventory-management-api-dotNet\\InventoryManagement\\Service\\ProductService.cs",
+              "RelativeToolTip": "InventoryManagement\\Service\\ProductService.cs",
+              "ViewState": "AgIAAEQAAAAAAAAAAAAIwBUAAAA3AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-25T23:55:58.508Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "InventoryMovementController.cs",
+              "DocumentMoniker": "C:\\Users\\chris\\OneDrive\\Documents\\Projects\\inventory-management-api-dotNet\\InventoryManagement\\Controllers\\InventoryMovementController.cs",
+              "RelativeDocumentMoniker": "InventoryManagement\\Controllers\\InventoryMovementController.cs",
+              "ToolTip": "C:\\Users\\chris\\OneDrive\\Documents\\Projects\\inventory-management-api-dotNet\\InventoryManagement\\Controllers\\InventoryMovementController.cs",
+              "RelativeToolTip": "InventoryManagement\\Controllers\\InventoryMovementController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAEAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-25T23:53:45.25Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "CategoryRepository.cs",
+              "DocumentMoniker": "C:\\Users\\chris\\OneDrive\\Documents\\Projects\\inventory-management-api-dotNet\\InventoryManagement\\Repository\\CategoryRepository.cs",
+              "RelativeDocumentMoniker": "InventoryManagement\\Repository\\CategoryRepository.cs",
+              "ToolTip": "C:\\Users\\chris\\OneDrive\\Documents\\Projects\\inventory-management-api-dotNet\\InventoryManagement\\Repository\\CategoryRepository.cs",
+              "RelativeToolTip": "InventoryManagement\\Repository\\CategoryRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-25T23:54:07.344Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "CustomerRepository.cs",
+              "DocumentMoniker": "C:\\Users\\chris\\OneDrive\\Documents\\Projects\\inventory-management-api-dotNet\\InventoryManagement\\Repository\\CustomerRepository.cs",
+              "RelativeDocumentMoniker": "InventoryManagement\\Repository\\CustomerRepository.cs",
+              "ToolTip": "C:\\Users\\chris\\OneDrive\\Documents\\Projects\\inventory-management-api-dotNet\\InventoryManagement\\Repository\\CustomerRepository.cs",
+              "RelativeToolTip": "InventoryManagement\\Repository\\CustomerRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-25T23:54:30.523Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\chris\\OneDrive\\Documents\\Projects\\inventory-management-api-dotNet\\InventoryManagement\\appsettings.json",
+              "RelativeDocumentMoniker": "InventoryManagement\\appsettings.json",
+              "ToolTip": "C:\\Users\\chris\\OneDrive\\Documents\\Projects\\inventory-management-api-dotNet\\InventoryManagement\\appsettings.json",
+              "RelativeToolTip": "InventoryManagement\\appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAABkAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-08-26T00:06:38.208Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "OrderItemController.cs",
+              "DocumentMoniker": "C:\\Users\\chris\\OneDrive\\Documents\\Projects\\inventory-management-api-dotNet\\InventoryManagement\\Controllers\\OrderItemController.cs",
+              "RelativeDocumentMoniker": "InventoryManagement\\Controllers\\OrderItemController.cs",
+              "ToolTip": "C:\\Users\\chris\\OneDrive\\Documents\\Projects\\inventory-management-api-dotNet\\InventoryManagement\\Controllers\\OrderItemController.cs",
+              "RelativeToolTip": "InventoryManagement\\Controllers\\OrderItemController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-26T00:10:44.576Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "OrderController.cs",
+              "DocumentMoniker": "C:\\Users\\chris\\OneDrive\\Documents\\Projects\\inventory-management-api-dotNet\\InventoryManagement\\Controllers\\OrderController.cs",
+              "RelativeDocumentMoniker": "InventoryManagement\\Controllers\\OrderController.cs",
+              "ToolTip": "C:\\Users\\chris\\OneDrive\\Documents\\Projects\\inventory-management-api-dotNet\\InventoryManagement\\Controllers\\OrderController.cs",
+              "RelativeToolTip": "InventoryManagement\\Controllers\\OrderController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-25T23:53:44.204Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "CustomerController.cs",
+              "DocumentMoniker": "C:\\Users\\chris\\OneDrive\\Documents\\Projects\\inventory-management-api-dotNet\\InventoryManagement\\Controllers\\CustomerController.cs",
+              "RelativeDocumentMoniker": "InventoryManagement\\Controllers\\CustomerController.cs",
+              "ToolTip": "C:\\Users\\chris\\OneDrive\\Documents\\Projects\\inventory-management-api-dotNet\\InventoryManagement\\Controllers\\CustomerController.cs",
+              "RelativeToolTip": "InventoryManagement\\Controllers\\CustomerController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-25T23:53:41.574Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "IUnitOfWork.cs",
+              "DocumentMoniker": "C:\\Users\\chris\\OneDrive\\Documents\\Projects\\inventory-management-api-dotNet\\InventoryManagement\\Settings\\UnitOfWork\\IUnitOfWork.cs",
+              "RelativeDocumentMoniker": "InventoryManagement\\Settings\\UnitOfWork\\IUnitOfWork.cs",
+              "ToolTip": "C:\\Users\\chris\\OneDrive\\Documents\\Projects\\inventory-management-api-dotNet\\InventoryManagement\\Settings\\UnitOfWork\\IUnitOfWork.cs",
+              "RelativeToolTip": "InventoryManagement\\Settings\\UnitOfWork\\IUnitOfWork.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-25T21:36:47.095Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "OrderRepository.cs",
+              "DocumentMoniker": "C:\\Users\\chris\\OneDrive\\Documents\\Projects\\inventory-management-api-dotNet\\InventoryManagement\\Repository\\OrderRepository.cs",
+              "RelativeDocumentMoniker": "InventoryManagement\\Repository\\OrderRepository.cs",
+              "ToolTip": "C:\\Users\\chris\\OneDrive\\Documents\\Projects\\inventory-management-api-dotNet\\InventoryManagement\\Repository\\OrderRepository.cs",
+              "RelativeToolTip": "InventoryManagement\\Repository\\OrderRepository.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAABcAAABLAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-25T21:33:49.804Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "UnitOfWork.cs",
+              "DocumentMoniker": "C:\\Users\\chris\\OneDrive\\Documents\\Projects\\inventory-management-api-dotNet\\InventoryManagement\\Settings\\UnitOfWork\\UnitOfWork.cs",
+              "RelativeDocumentMoniker": "InventoryManagement\\Settings\\UnitOfWork\\UnitOfWork.cs",
+              "ToolTip": "C:\\Users\\chris\\OneDrive\\Documents\\Projects\\inventory-management-api-dotNet\\InventoryManagement\\Settings\\UnitOfWork\\UnitOfWork.cs",
+              "RelativeToolTip": "InventoryManagement\\Settings\\UnitOfWork\\UnitOfWork.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAEcAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-25T21:31:18.268Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\chris\\OneDrive\\Documents\\Projects\\inventory-management-api-dotNet\\InventoryManagement\\Program.cs",
+              "RelativeDocumentMoniker": "InventoryManagement\\Program.cs",
+              "ToolTip": "C:\\Users\\chris\\OneDrive\\Documents\\Projects\\inventory-management-api-dotNet\\InventoryManagement\\Program.cs",
+              "RelativeToolTip": "InventoryManagement\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABwAAAAuAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-25T21:30:39.917Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "InventoryMovementRepository.cs",
+              "DocumentMoniker": "C:\\Users\\chris\\OneDrive\\Documents\\Projects\\inventory-management-api-dotNet\\InventoryManagement\\Repository\\InventoryMovementRepository.cs",
+              "RelativeDocumentMoniker": "InventoryManagement\\Repository\\InventoryMovementRepository.cs",
+              "ToolTip": "C:\\Users\\chris\\OneDrive\\Documents\\Projects\\inventory-management-api-dotNet\\InventoryManagement\\Repository\\InventoryMovementRepository.cs",
+              "RelativeToolTip": "InventoryManagement\\Repository\\InventoryMovementRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-26T00:00:58.982Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "OrderItemRepository.cs",
+              "DocumentMoniker": "C:\\Users\\chris\\OneDrive\\Documents\\Projects\\inventory-management-api-dotNet\\InventoryManagement\\Repository\\OrderItemRepository.cs",
+              "RelativeDocumentMoniker": "InventoryManagement\\Repository\\OrderItemRepository.cs",
+              "ToolTip": "C:\\Users\\chris\\OneDrive\\Documents\\Projects\\inventory-management-api-dotNet\\InventoryManagement\\Repository\\OrderItemRepository.cs",
+              "RelativeToolTip": "InventoryManagement\\Repository\\OrderItemRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAwAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-26T00:00:32.935Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "RepositoryBase.cs",
+              "DocumentMoniker": "C:\\Users\\chris\\OneDrive\\Documents\\Projects\\inventory-management-api-dotNet\\InventoryManagement\\Settings\\Base\\RepositoryBase.cs",
+              "RelativeDocumentMoniker": "InventoryManagement\\Settings\\Base\\RepositoryBase.cs",
+              "ToolTip": "C:\\Users\\chris\\OneDrive\\Documents\\Projects\\inventory-management-api-dotNet\\InventoryManagement\\Settings\\Base\\RepositoryBase.cs",
+              "RelativeToolTip": "InventoryManagement\\Settings\\Base\\RepositoryBase.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-25T23:59:01.484Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "ProductRepository.cs",
+              "DocumentMoniker": "C:\\Users\\chris\\OneDrive\\Documents\\Projects\\inventory-management-api-dotNet\\InventoryManagement\\Repository\\ProductRepository.cs",
+              "RelativeDocumentMoniker": "InventoryManagement\\Repository\\ProductRepository.cs",
+              "ToolTip": "C:\\Users\\chris\\OneDrive\\Documents\\Projects\\inventory-management-api-dotNet\\InventoryManagement\\Repository\\ProductRepository.cs",
+              "RelativeToolTip": "InventoryManagement\\Repository\\ProductRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-26T00:00:54.503Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "Category.cs",
+              "DocumentMoniker": "C:\\Users\\chris\\OneDrive\\Documents\\Projects\\inventory-management-api-dotNet\\InventoryManagement\\Models\\Category.cs",
+              "RelativeDocumentMoniker": "InventoryManagement\\Models\\Category.cs",
+              "ToolTip": "C:\\Users\\chris\\OneDrive\\Documents\\Projects\\inventory-management-api-dotNet\\InventoryManagement\\Models\\Category.cs",
+              "RelativeToolTip": "InventoryManagement\\Models\\Category.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-26T00:01:04.285Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
