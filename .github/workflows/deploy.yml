@@ -48,4 +48,3 @@ jobs:
           cluster: inventory-cluster
           service: inventory-api-service
           task-definition: ecs-task-def.json
-          image: ${{ secrets.ECR_IMAGE_URI }}
