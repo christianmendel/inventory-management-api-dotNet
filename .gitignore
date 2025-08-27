@@ -1,0 +1,21 @@
+# Ignore appsettings (configurações sensíveis)
+appsettings.json
+appsettings.*.json
+
+# Ignore bin e obj (build outputs)
+bin/
+obj/
+
+# Ignore arquivos do usuário do Visual Studio / Rider / VS Code
+.vs/
+*.user
+*.suo
+*.idea/
+.vscode/
+
+# Ignore arquivos de log
+*.log
+
+# Ignore pacotes NuGet baixados
+*.nupkg
+packages/
