@@ -34,18 +34,26 @@ jobs:
 
       - name: Tag Docker image for ECR
         run: |
-          docker tag inventory-api ${{ secrets.ECR_IMAGE_URI }}
+          IMAGE_URI=${{ secrets.ECR_IMAGE_URI }}
+          docker tag inventory-api $IMAGE_URI
 
       - name: Push Docker image to ECR
         run: |
-          docker push ${{ secrets.ECR_IMAGE_URI }}
+          IMAGE_URI=${{ secrets.ECR_IMAGE_URI }}
+          docker push $IMAGE_URI
+
+      - name: Prepare ECS task definition
+        run: |
+          IMAGE_URI=${{ secrets.ECR_IMAGE_URI }}
+          EXEC_ROLE_ARN=${{ secrets.ECS_EXEC_ROLE_ARN }}
+          sed -e "s|REPLACE_IMAGE|$IMAGE_URI|g" \
+              -e "s|REPLACE_EXEC_ROLE|$EXEC_ROLE_ARN|g" \
+              ecs-task-def.json > ecs-task-def-final.json
 
       - name: Deploy to ECS
         uses: aws-actions/amazon-ecs-deploy-task-definition@v1
         with:
           cluster: inventory-cluster
           service: inventory-api-service
-          task-definition: ecs-task-def.json
-          container-name: inventory-api
-          image: ${{ secrets.ECR_IMAGE_URI }}
-          execution-role-arn: ${{ secrets.ECS_EXEC_ROLE_ARN }}
+          task-definition: ecs-task-def-final.json
+          wait-for-service-stability: true
