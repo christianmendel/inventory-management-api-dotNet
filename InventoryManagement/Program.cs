@@ -14,6 +14,12 @@ builder.Services.AddScoped<IDbConnection>(sp =>
     return new Npgsql.NpgsqlConnection(connectionString);
 });
 
+builder.Services.AddStackExchangeRedisCache(options =>
+{
+    options.Configuration = builder.Configuration.GetSection("Redis")["Connection"];
+    options.InstanceName = "MyApi_";
+});
+
 // Repositórios
 builder.Services.AddScoped<ICategoryRepository, CategoryRepository>();
 builder.Services.AddScoped<IProductRepository, ProductRepository>();
