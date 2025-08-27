@@ -42,9 +42,14 @@ jobs:
           IMAGE_URI=${{ secrets.ECR_IMAGE_URI }}
           docker push $IMAGE_URI
 
+      - name: Replace execution role in task definition
+        run: |
+          sed -i "s|REPLACE_EXEC_ROLE|${{ secrets.ECS_EXEC_ROLE_ARN }}|g" ecs-task-def.json
+
       - name: Deploy to ECS
         uses: aws-actions/amazon-ecs-deploy-task-definition@v1
         with:
           cluster: inventory-cluster
           service: inventory-api-service
           task-definition: ecs-task-def.json
+          image: ${{ secrets.ECR_IMAGE_URI }}
