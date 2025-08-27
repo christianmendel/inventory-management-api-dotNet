@@ -14,11 +14,13 @@
 
 ## 🛠️ Ferramentas  
 
-- .NET 6 / 7 (ASP.NET Core Web API)  
+- .NET 8 (ASP.NET Core Web API)  
 - C#  
-- PostgreSQL (armazenamento de dados)  
+- PostgreSQL 15 (armazenamento de dados)  
+- Redis 7 (cache e mensageria)  
 - Dapper (acesso ao banco de dados)  
 - Swagger (documentação da API)  
+- Docker & Docker Compose  
 
 ---
 
@@ -28,6 +30,7 @@
 - [Dapper](https://learn.microsoft.com/dotnet/architecture/microservices/microservice-ddd-cqrs-patterns/infrastructure-persistence-layer-design)  
 - [Swagger / Swashbuckle](https://github.com/domaindrivendev/Swashbuckle.AspNetCore)  
 - [PostgreSQL](https://www.postgresql.org/docs/)  
+- [Redis](https://redis.io/documentation)  
 
 ---
 
@@ -36,3 +39,4 @@
 1. **Clone o Repositório**  
    ```bash
    git clone https://github.com/seu-usuario/inventory-management-api.git
+   cd inventory-management-api
