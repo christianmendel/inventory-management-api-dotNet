@@ -30,8 +30,7 @@ jobs:
         uses: aws-actions/amazon-ecr-login@v2
 
       - name: Build Docker image
-        run: |
-          docker build -t inventory-api ./InventoryManagement
+        run: docker build -t inventory-api ./InventoryManagement
 
       - name: Tag Docker image for ECR
         run: |
@@ -46,10 +45,7 @@ jobs:
       - name: Deploy to ECS
         uses: aws-actions/amazon-ecs-deploy-task-definition@v1
         with:
-          aws-access-key-id: ${{ secrets.AWS_ACCESS_KEY_ID }}
-          aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
-          region: sa-east-1
-          cluster: inventory-cluster       # nome do cluster ECS
-          service: inventory-api-service  # nome do serviço ECS
-          task-definition: ecs-task-def.json  # arquivo de Task Definition
+          cluster: inventory-cluster
+          service: inventory-api-service
+          task-definition: ecs-task-def.json
           image: ${{ secrets.ECR_IMAGE_URI }}
