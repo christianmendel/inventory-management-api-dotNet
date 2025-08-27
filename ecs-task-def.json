@@ -4,7 +4,7 @@
   "containerDefinitions": [
     {
       "name": "inventory-api",
-      "image": "REPLACE_IMAGE", 
+      "image": "${ECR_IMAGE_URI}", 
       "essential": true,
       "portMappings": [
         {
@@ -25,5 +25,5 @@
   "requiresCompatibilities": ["FARGATE"],
   "cpu": "1024",
   "memory": "3072",
-  "executionRoleArn": "REPLACE_EXEC_ROLE"
+  "executionRoleArn": "${ECS_EXEC_ROLE_ARN}"
 }
